@@ -1,0 +1,1 @@
+TIMESTAMP \d\d-\d\d \d\d:\d\d:\d\d.\d\d\d

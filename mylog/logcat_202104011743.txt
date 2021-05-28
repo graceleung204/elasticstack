@@ -1,0 +1,1639 @@
+--------- beginning of events
+01-10 08:08:12.067   348   348 I auditd  : type=2000 audit(0.0:1): initialized
+01-10 08:08:13.483   348   348 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+01-10 08:08:13.483   348   348 I auditd  : type=1404 audit(0.0:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+01-10 08:08:17.838   349   349 I auditd  : SELinux: Loaded service_contexts from:
+01-10 08:08:17.854   349   349 I auditd  :     /system/etc/selinux/plat_service_contexts
+--------- beginning of system
+01-10 08:08:18.024   355   355 I vold    : Vold 3.0 (the awakening) firing up
+01-10 08:08:18.025   355   355 D vold    : Detected support for: ext4 f2fs vfat
+01-10 08:08:18.035   355   355 D vold    : Found unmanaged dm device named vroot
+01-10 08:08:18.035   355   355 D vold    : Found unmanaged dm device named vendor-verity
+01-10 08:08:18.035   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop10: No such device or address
+01-10 08:08:18.035   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop5: No such device or address
+01-10 08:08:18.035   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop9: No such device or address
+01-10 08:08:18.035   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop4: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop2: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop8: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop13: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop7: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop12: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop1: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop15: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop3: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop0: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop14: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop6: No such device or address
+01-10 08:08:18.036   355   355 W vold    : Failed to LOOP_GET_STATUS64 /dev/block/loop11: No such device or address
+01-10 08:08:18.040   355   355 D vold    : VoldNativeService::start() completed OK
+01-10 08:08:18.313   355   365 I vold    : Found disk at /devices/platform/soc/7864900.sdhci/mmc_host/mmc1/mmc1:aaaa/block/mmcblk1 but delaying scan due to secure keyguard
+01-10 08:08:18.577   383   392 I QISL    : QSEE Interrupt Service Listener Thread is started
+01-10 08:08:18.578   383   392 I QISL    : QSEE Interrupt Service Listener was activated successfully
+01-10 08:08:18.672   355   355 I Checkpoint: cp_prepareCheckpoint called
+01-10 08:08:18.703   355   355 I vold    : fscrypt_initialize_systemwide_keys
+01-10 08:08:18.703   355   355 I vold    : Creating new key in /data/unencrypted/key
+01-10 08:08:18.728   355   355 I vold    : List of Keymaster HALs found:
+01-10 08:08:18.728   355   355 I vold    : Keymaster HAL #1: Keymaster HAL: 4 from QTI SecurityLevel: TRUSTED_ENVIRONMENT HAL: android.hardware.keymaster@4.0::IKeymasterDevice/default
+01-10 08:08:18.735   355   355 D vold    : Computing HMAC with params { (seed: 07dae02926d63a53823eee7317c98af484b4893cef0f8572b8c310c471238c, nonce: 6c60e3e83c4c23eff9dc64c1ef38c515aa06fd8295a88e25f13d346c64d3c38) }
+01-10 08:08:18.735   355   355 D vold    : Computing HMAC for Keymaster HAL: 4 from QTI SecurityLevel: TRUSTED_ENVIRONMENT HAL: android.hardware.keymaster@4.0::IKeymasterDevice/default
+01-10 08:08:18.743   355   355 I vold    : Using Keymaster HAL: 4 from QTI for encryption.  Security level: TRUSTED_ENVIRONMENT, HAL: android.hardware.keymaster@4.0::IKeymasterDevice/default
+01-10 08:08:18.743   355   355 D vold    : Creating key that doesn't need auth token
+01-10 08:08:18.773   355   355 D vold    : Created key: /data/unencrypted/key
+01-10 08:08:18.773   355   355 D vold    : Added key 873865705 (ext4:55cbb2c8e531c623) to keyring 739244583 in process 355
+01-10 08:08:18.774   355   355 D vold    : Added key 262296870 (f2fs:55cbb2c8e531c623) to keyring 739244583 in process 355
+01-10 08:08:18.774   355   355 D vold    : Added key 55732061 (fscrypt:55cbb2c8e531c623) to keyring 739244583 in process 355
+01-10 08:08:18.776   355   355 I vold    : Wrote system DE key reference to:/data/unencrypted/ref
+01-10 08:08:18.776   355   355 D vold    : Added key 1024657077 (ext4:5c26f079eddc74f7) to keyring 739244583 in process 355
+01-10 08:08:18.776   355   355 D vold    : Added key 1068095144 (f2fs:5c26f079eddc74f7) to keyring 739244583 in process 355
+01-10 08:08:18.776   355   355 D vold    : Added key 46014681 (fscrypt:5c26f079eddc74f7) to keyring 739244583 in process 355
+01-10 08:08:18.777   355   355 I vold    : Wrote per boot key reference to:/data/unencrypted/per_boot_ref
+01-10 08:08:19.001   355   355 D vold    : fscrypt_init_user0
+01-10 08:08:19.001   355   355 D vold    : Preparing: /data/misc/vold/user_keys
+01-10 08:08:19.002   355   355 D vold    : Preparing: /data/misc/vold/user_keys/ce
+01-10 08:08:19.002   355   355 D vold    : Preparing: /data/misc/vold/user_keys/de
+01-10 08:08:19.002   355   355 D vold    : Preparing: /data/misc/vold/user_keys/ce/0
+01-10 08:08:19.002   355   355 D vold    : Skipping non-key .
+01-10 08:08:19.002   355   355 D vold    : Skipping non-key ..
+01-10 08:08:19.070   355   355 I vold    : List of Keymaster HALs found:
+01-10 08:08:19.070   355   355 I vold    : Keymaster HAL #1: Keymaster HAL: 4 from QTI SecurityLevel: TRUSTED_ENVIRONMENT HAL: android.hardware.keymaster@4.0::IKeymasterDevice/default
+01-10 08:08:19.070   355   355 I vold    : Using Keymaster HAL: 4 from QTI for encryption.  Security level: TRUSTED_ENVIRONMENT, HAL: android.hardware.keymaster@4.0::IKeymasterDevice/default
+01-10 08:08:19.070   355   355 D vold    : Creating key that doesn't need auth token
+01-10 08:08:19.094   355   355 D vold    : Created key: /data/misc/vold/user_keys/ce/0/current
+01-10 08:08:19.114   355   355 I vold    : List of Keymaster HALs found:
+01-10 08:08:19.114   355   355 I vold    : Keymaster HAL #1: Keymaster HAL: 4 from QTI SecurityLevel: TRUSTED_ENVIRONMENT HAL: android.hardware.keymaster@4.0::IKeymasterDevice/default
+01-10 08:08:19.114   355   355 I vold    : Using Keymaster HAL: 4 from QTI for encryption.  Security level: TRUSTED_ENVIRONMENT, HAL: android.hardware.keymaster@4.0::IKeymasterDevice/default
+01-10 08:08:19.114   355   355 D vold    : Creating key that doesn't need auth token
+01-10 08:08:19.136   355   355 D vold    : Created key: /data/misc/vold/user_keys/de/0
+01-10 08:08:19.136   355   355 D vold    : Added key 940001150 (ext4:9c3694e93d314aef) to keyring 739244583 in process 355
+01-10 08:08:19.136   355   355 D vold    : Added key 198532020 (f2fs:9c3694e93d314aef) to keyring 739244583 in process 355
+01-10 08:08:19.136   355   355 D vold    : Added key 736017980 (fscrypt:9c3694e93d314aef) to keyring 739244583 in process 355
+01-10 08:08:19.136   355   355 D vold    : Added key 67251020 (ext4:81b0e08c5b54ce81) to keyring 739244583 in process 355
+01-10 08:08:19.136   355   355 D vold    : Added key 1009910505 (f2fs:81b0e08c5b54ce81) to keyring 739244583 in process 355
+01-10 08:08:19.136   355   355 D vold    : Added key 1021511794 (fscrypt:81b0e08c5b54ce81) to keyring 739244583 in process 355
+01-10 08:08:19.136   355   355 D vold    : Created keys for user 0
+01-10 08:08:19.136   355   355 D vold    : Skipping non-de-key .
+01-10 08:08:19.136   355   355 D vold    : Skipping non-de-key ..
+01-10 08:08:19.137   355   355 D vold    : fscrypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+01-10 08:08:19.137   355   355 D vold    : Preparing: /data/system/users/0
+01-10 08:08:19.137   355   355 D vold    : Preparing: /data/misc/profiles/cur/0
+01-10 08:08:19.137   355   355 D vold    : Preparing: /data/system_de/0
+01-10 08:08:19.137   355   355 D vold    : Preparing: /data/misc_de/0
+01-10 08:08:19.137   355   355 D vold    : Preparing: /data/vendor_de/0
+01-10 08:08:19.137   355   355 D vold    : Preparing: /data/user_de/0
+01-10 08:08:19.138   355   355 I vold    : Policy for /data/system_de/0 set to 9c3694e93d314aef modes 127/4
+01-10 08:08:19.138   355   355 I vold    : Policy for /data/misc_de/0 set to 9c3694e93d314aef modes 127/4
+01-10 08:08:19.138   355   355 I vold    : Policy for /data/vendor_de/0 set to 9c3694e93d314aef modes 127/4
+01-10 08:08:19.138   355   355 I vold    : Policy for /data/user_de/0 set to 9c3694e93d314aef modes 127/4
+01-10 08:08:19.138   355   355 D vold    : /system/bin/vold_prepare_subdirs
+01-10 08:08:19.138   355   355 D vold    :     prepare
+01-10 08:08:19.138   355   355 D vold    :     
+01-10 08:08:19.138   355   355 D vold    :     0
+01-10 08:08:19.138   355   355 D vold    :     1
+01-10 08:08:19.895   515   515 I irsc_util: Starting irsc tool
+01-10 08:08:19.905   515   515 I irsc_util: Num of entries:297
+01-10 08:08:19.916   515   515 I irsc_util: Ending irsc tool
+01-10 08:08:20.162   513   513 I android.hardware.wifi@1.0-service: Wifi Hal is booting up...
+01-10 08:08:20.167   513   513 I ServiceManagement: Registered android.hardware.wifi@1.3::IWifi/default (start delay of 439ms)
+01-10 08:08:21.347   677   677 I wificond: wificond is starting up...
+--------- beginning of radio
+01-10 08:08:21.855   637   637 D IMSD    : **IMS Daemon Started**
+01-10 08:08:23.870   804   804 I auditd  : type=1400 audit(0.0:4): avc: denied { dac_override } for comm="cp" capability=1 scontext=u:r:qti_init_shell:s0 tcontext=u:r:qti_init_shell:s0 tclass=capability permissive=0
+01-10 08:08:23.870   804   804 I auditd  : type=1400 audit(0.0:5): avc: denied { dac_override } for comm="cp" capability=1 scontext=u:r:qti_init_shell:s0 tcontext=u:r:qti_init_shell:s0 tclass=capability permissive=0
+01-10 08:08:24.943   619   619 I auditd  : type=1400 audit(0.0:6): avc: denied { read } for comm="wcnss_service" name="u:object_r:system_prop:s0" dev="tmpfs" ino=6339 scontext=u:r:wcnss_service:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=0
+01-10 08:08:25.006   619   619 I auditd  : type=1400 audit(0.0:7): avc: denied { read } for comm="wcnss_service" name="u:object_r:serialno_prop:s0" dev="tmpfs" ino=6333 scontext=u:r:wcnss_service:s0 tcontext=u:object_r:serialno_prop:s0 tclass=file permissive=0
+01-10 08:08:26.919   637   637 E         : getPhoneCount iTelephony is NULL
+01-10 08:08:26.921   637   637 D ImsSenderRxr: registerServerNotification: phoneId 0
+01-10 08:08:26.932   637   637 D ImsSenderRxr: Registered for service start notifications
+01-10 08:08:27.508   642   818 E storaged: getService package_native failed
+01-10 08:08:27.818   642   818 I storaged: storaged: Start
+01-10 08:08:31.661   862   862 D RILD    : **RIL Daemon Started**
+01-10 08:08:31.661   862   862 D RILD    : **RILd param count=1**
+01-10 08:08:31.661   862   862 D RILD    : RIL_Init argc = 3 clientId = 0
+01-10 08:08:31.703   862   862 E RILQ    : log to /data/vendor/radio/ril_log for QCRIL logging is not enabled
+01-10 08:08:32.015   637   637 E         : getPhoneCount iTelephony is NULL
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af99446c registering for msg UNSOL_RADIO_STATE_CHANGED list size 17
+01-10 08:08:32.016   637   637 D ImsSubController: onServiceDown phoneId = 0
+01-10 08:08:32.016   637   637 D ImsSubController: updateStackConfig phoneId = 0 isEnabled =  false mIsDsdv = true
+01-10 08:08:32.016   637   637 D ImsSubController: updateStackConfig Stacks are not yet initialized
+01-10 08:08:32.016   637   637 D ImsSubController: notifyStackConfigChanged phoneId = 0
+01-10 08:08:32.016   637   637 D ImsSubController: activeStack[0] = false
+01-10 08:08:32.016   637   637 D ImsServiceSub: onStackConfigChanged
+01-10 08:08:32.016   637   637 D ImsServiceSub: onStackConfigChanged activeStacks[0] = false
+01-10 08:08:32.016   637   637 D ImsServiceSub: onStackConfigChanged oldFeatureState = 1 mFeatureState = 0
+01-10 08:08:32.016   637   637 W ImsServiceSub: mFeatureStatusListener is null. Not able to inform B2G of feature status
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af9a3000 registering for msg UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af9a3000 registering for msg UNSOL_SRV_STATUS_UPDATE list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af9a3000 registering for msg UNSOL_RESPONSE_CALL_STATE_CHANGED list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af9a3000 registering for msg UNSOL_RESPONSE_HANDOVER list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af9a3000 registering for msg UNSOL_SUPP_SVC_NOTIFICATION list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af9a3000 registering for msg UNSOL_MODIFY_CALL list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af9a3000 registering for msg UNSOL_AUTO_CALL_REJECTION list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af9a3000 registering for msg UNSOL_REFRESH_CONF_INFO list size 17
+01-10 08:08:32.016   637   637 D ImsEcbmImpl: ImsEcbmImpl
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af97b570 registering for msg UNSOL_ENTER_EMERGENCY_CALLBACK_MODE list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af97b570 registering for msg UNSOL_EXIT_EMERGENCY_CALLBACK_MODE list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af98f3cc registering for msg UNSOL_INCOMING_IMS_SMS list size 17
+01-10 08:08:32.016   637   637 D ImsSenderRxr: registerForMessage:: Handler af98f3cc registering for msg UNSOL_IMS_SMS_STATUS_REPORT list size 17
+01-10 08:08:32.016   637   637 D ImsService: startService registering Service: imsservicemanager
+01-10 08:08:32.017   637   637 D IMSD    : starting sleep loop
+01-10 08:08:32.925   642   818 E storaged: getService package_native failed
+01-10 08:08:33.340   862   862 W RILC    : RIL_onUnsolicitedResponse called before RIL_register
+01-10 08:08:33.452   862   862 I chatty  : uid=1001(radio) main identical 1 line
+01-10 08:08:33.453   862   862 W RILC    : RIL_onUnsolicitedResponse called before RIL_register
+01-10 08:08:33.468   862   862 D RILD    : RIL_Init rilInit completed
+01-10 08:08:33.468   862   862 I RILC    : SIM_COUNT: 1
+01-10 08:08:33.468   862   862 E RILC    : RIL_register: RIL version 15
+01-10 08:08:33.468   862   862 I RILC    : s_registerCalled flag set, 1
+01-10 08:08:33.471   862  1284 D RIL_SAP : sap_register_service status=0
+01-10 08:08:33.544   637  1012 D ImsSenderRxr: onRegistration callback fqname = vendor.qti.hardware.radio.ims@1.0::IImsRadio name = imsradio0
+01-10 08:08:33.544   637  1012 D ImsSenderRxr: initImsRadio: phoneId 0
+01-10 08:08:33.559   637  1012 D ImsSenderRxr: initImsRadio: imsRadioV11 availability: available
+01-10 08:08:33.573   637  1012 D ImsSenderRxr: initImsRadio: imsRadioV12 availability: available
+01-10 08:08:33.577   637  1012 D ImsSenderRxr: initImsRadio: imsRadioV13 availability: available
+01-10 08:08:33.583   637  1012 D ImsSenderRxr: initImsRadio: imsRadioV14 availability: available
+01-10 08:08:33.589   637  1012 D ImsSenderRxr: initImsRadio: imsRadioV15 availability: available
+01-10 08:08:33.600   637  1012 D ImsSenderRxr: initImsRadio: imsRadioV16 availability: available
+01-10 08:08:33.693   637  1012 D ImsSenderRxr: notifyServiceUp instanceName = imsradio0
+01-10 08:08:33.693   637  1012 D ImsSubController: onServiceUp phoneId = 0
+01-10 08:08:33.693   637  1012 D ImsSubController: Single SIM mode
+01-10 08:08:33.693   637  1012 D ImsSubController: initSubscriptionStatus: Not multi-sim
+01-10 08:08:33.693   637  1012 D ImsSubController: notifyStackConfigChanged phoneId = 0
+01-10 08:08:33.693   637  1012 D ImsSubController: activeStack[0] = true
+01-10 08:08:33.693   637  1012 D ImsServiceSub: onStackConfigChanged
+01-10 08:08:33.693   637  1012 D ImsServiceSub: onStackConfigChanged activeStacks[0] = true
+01-10 08:08:33.693   637  1012 D ImsServiceSub: onStackConfigChanged oldFeatureState = 0 mFeatureState = 2
+01-10 08:08:33.693   637  1012 W ImsServiceSub: mFeatureStatusListener is null. Not able to inform B2G of feature status
+01-10 08:08:33.704   862   862 I RILC    : RILHIDL called registerService
+01-10 08:08:33.704   862   862 D RILD    : RIL_Init RIL_register completed
+01-10 08:08:33.704   862   862 D RILD    : RIL_register_socket completed
+01-10 08:08:33.718   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:08:33.723   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] qcril_reqlist_new_all: [RID 0] Fail to add ReqList entry with token [0xffffff04 (token id -252)] (already exists)
+01-10 08:08:33.725   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:08:33.729   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:08:33.734   637  1012 D ImsSenderRxr: onRadioStateChanged
+01-10 08:08:33.738   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:08:33.741   637  1012 D         : radioState = 0
+01-10 08:08:33.741   637  1012 D ImsSenderRxr: [UNSOL] < UNSOL_RADIO_STATE_CHANGED [SUB0]
+01-10 08:08:33.741   637  1012 D ImsSubController: Received unsolicited IMS response UNSOL_RADIO_STATE_CHANGED
+01-10 08:08:33.741   637  1012 D ImsSubController: handleRadioStateChanged radioState = 0 phoneId = 0
+01-10 08:08:33.741   637  1012 D ImsSenderRxr: getImsSubConfig
+01-10 08:08:33.741   637  1012 D ImsSenderRxr: [0000] > REQUEST_GET_IMS_SUB_CONFIG [SUB0]
+01-10 08:08:33.766   637  1012 D ImsSenderRxr: getImsSubConfigResponse errorCode = 0
+01-10 08:08:33.766   637  1012 D         : ImsSubConfigDetails simultStackCount: 1
+01-10 08:08:33.766   637  1012 D         : mImsStackEnabled[0] = true
+01-10 08:08:33.766   637  1012 D         : mImsStackEnabled[1] = false
+01-10 08:08:33.766   637  1012 D         : mImsStackEnabled[2] = false
+01-10 08:08:33.766   637  1012 D ImsSenderRxr: [0000] < REQUEST_GET_IMS_SUB_CONFIG [SUB0]
+01-10 08:08:33.766   637  1012 D ImsSubController: Received solicited IMS response REQUEST_GET_IMS_SUB_CONFIG
+01-10 08:08:33.767   637  1012 D         : ImsSubConfigDetails simultStackCount: 1
+01-10 08:08:33.767   637  1012 D         : mImsStackEnabled[0] = true
+01-10 08:08:33.767   637  1012 D         : mImsStackEnabled[1] = false
+01-10 08:08:33.767   637  1012 D         : mImsStackEnabled[2] = false
+01-10 08:08:33.767   637  1012 D ImsSubController: handleSubConfigChanged mActiveStacks[0] = true
+01-10 08:08:33.767   637  1012 D ImsSubController: handleSubConfigChanged phoneId = 0
+01-10 08:08:33.767   637  1012 D ImsSubController: notifyStackConfigChanged phoneId = 0
+01-10 08:08:33.767   637  1012 D ImsSubController: activeStack[0] = true
+01-10 08:08:33.767   637  1012 D ImsServiceSub: onStackConfigChanged
+01-10 08:08:33.767   637  1012 D ImsServiceSub: onStackConfigChanged activeStacks[0] = true
+01-10 08:08:33.767   637  1012 D ImsServiceSub: onStackConfigChanged oldFeatureState = 2 mFeatureState = 2
+01-10 08:08:33.767   637  1012 W ImsServiceSub: mFeatureStatusListener is null. Not able to inform B2G of feature status
+01-10 08:08:44.836   607   607 I Gecko   : ============ B2G device information ============
+01-10 08:08:44.836   607   607 I Gecko   : Build UID         = 
+01-10 08:08:44.836   607   607 I Gecko   : Build Description = Gflip5_VZW-userdebug 10 QKQ1.200623.002 eng.rex.20210401.165856 test-keys
+01-10 08:08:44.836   607   607 I Gecko   : Bootloader        = unknown
+01-10 08:08:44.836   607   607 I Gecko   : OS Version        = KAIOS 3.0
+01-10 08:08:44.836   607   607 I Gecko   : ==================================================
+01-10 08:08:45.250   627   627 I auditd  : type=1400 audit(0.0:8): avc: denied { read } for comm="vm_bms" name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+01-10 08:08:45.260   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 39 lines
+01-10 08:08:45.260   627   627 I auditd  : type=1400 audit(0.0:48): avc: denied { read } for comm="vm_bms" name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+01-10 08:08:46.316  1404  1404 I sysui_multi_action: [757,1098,758,4,1099,<EMPTY>]
+01-10 08:08:46.319  1404  1404 I sysui_multi_action: [757,804,799,factory_reset_current_time,801,778126,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,last_boot_time_utc,801,778126,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,build_date,801,1617267534,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,factory_reset_boot_complete_no_encryption,801,35,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,factory_reset_boot_complete,801,35,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,ro.boottime.init,801,1352,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,ro.boottime.init.selinux,801,192,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,ro.boottime.init.cold_boot_wait,801,2889,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,boottime.bootloader.total,801,0,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,absolute_boot_time,801,35,802,1]
+01-10 08:08:46.321  1404  1404 I sysui_multi_action: [757,804,799,boot_reason,801,0,802,1]
+01-10 08:08:46.322  1404  1404 I sysui_multi_action: [757,804,799,system_boot_reason,801,64,802,1]
+01-10 08:08:46.322  1404  1404 I sysui_multi_action: [757,804,799,factory_reset_current_time,801,778126,802,1]
+01-10 08:08:46.322  1404  1404 I sysui_multi_action: [757,804,799,factory_reset,801,778126,802,1]
+01-10 08:08:47.190  1456  1456 I auditd  : type=1400 audit(0.0:49): avc: denied { read } for comm="getprop" name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:qti_init_shell:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+01-10 08:08:47.519   862   862 D RILC    : setResponseFunctions_1_4
+01-10 08:08:47.534   862   862 D RILC    : RadioImpl_1_4::setResponseFunctions_nolock
+01-10 08:08:47.563   862   862 D RILC    : RadioImpl_1_3::setResponseFunctions_nolock
+01-10 08:08:47.563   862   862 D RILC    : RadioImpl_1_2::setResponseFunctions_nolock
+01-10 08:08:47.612   862   862 D RILC    : rilConnectedInd
+01-10 08:08:47.613   862   862 D RILC    : radioStateChangedInd: radioState 0
+01-10 08:08:47.614   862   862 I RILC    : RIL Daemon version: Qualcomm RIL 1.0
+01-10 08:08:47.809   637  1241 D ImsService: createMmTelFeature slotId = 0
+01-10 08:08:47.809   637  1241 D ImsServiceSub: setFeatureStatusListener mFeatureState = 2
+01-10 08:08:48.111   637  1241 D ImsServiceSub: setSmsListener setting IImsSmsListener
+01-10 08:08:48.111   637  1241 D ImsSmsImpl: registerSmsListener setting IImsSmsListener
+01-10 08:08:48.111   637  1241 D ImsSmsImpl: onReady 
+01-10 08:08:49.692   862   862 D RILC    : setRadioPower: serial 2 on 0
+01-10 08:08:49.696   637  1241 D ImsService: getRegistration slotId = 0
+01-10 08:08:49.697   637  1241 D ImsService: getConfig slotId = 0
+01-10 08:08:49.708   637  1241 D ImsService: getEcbm slotId = 0
+01-10 08:08:49.709   637  1241 D ImsEcbmImpl: setListener
+01-10 08:08:49.709   637  1241 D ImsServiceSub: setListener setting mMMtelListener
+01-10 08:08:49.709   637  1241 D ImsServiceSub: creating ImsServiceClassTracker
+01-10 08:08:49.710   637  1241 D ImsServiceClassTracker: updateFeatureCapabilities isVideoSupported = false isVoiceSupported = false
+01-10 08:08:49.710   637  1241 D ImsSenderRxr: getImsRegistrationState
+01-10 08:08:49.710   637  1241 D ImsSenderRxr: [0001] > REQUEST_IMS_REGISTRATION_STATE [SUB0]
+01-10 08:08:49.744   637  1241 D ImsRegistrationImpl: getRegistrationTechnology mImsRadioTech = 0
+01-10 08:08:49.827   637  1012 D ImsSenderRxr: getRegistrationResponse_1_6 errorCode = 0
+01-10 08:08:49.827   637  1012 D         : ImsRegistrationInfo state: 2 errorCode: 0 errorMessage:  radioTech: 2147483647 pAssociatedUris: 
+01-10 08:08:49.827   637  1012 D ImsSenderRxr: [0001] < REQUEST_IMS_REGISTRATION_STATE [SUB0]
+01-10 08:08:49.827   637  1012 D ImsServiceSub: Received solicited IMS response REQUEST_IMS_REGISTRATION_STATE
+01-10 08:08:49.827   637  1012 D         : ImsRegistrationInfo state: 2 errorCode: 0 errorMessage:  radioTech: 2147483647 pAssociatedUris: 
+01-10 08:08:49.827   637  1012 D ImsRegistrationImpl: onDeregistered reasonInfo = 0
+01-10 08:08:49.844   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:08:49.852   862  1232 D RILC    : radioStateChangedInd: radioState 0
+01-10 08:08:49.853   637  1012 D ImsSenderRxr: onRadioStateChanged
+01-10 08:08:49.854   637  1012 D         : radioState = 0
+01-10 08:08:49.854   637  1012 D ImsSenderRxr: [UNSOL] < UNSOL_RADIO_STATE_CHANGED [SUB0]
+01-10 08:08:49.854   637  1012 D ImsSubController: Received unsolicited IMS response UNSOL_RADIO_STATE_CHANGED
+01-10 08:08:49.854   637  1012 D ImsSubController: handleRadioStateChanged radioState = 0 phoneId = 0
+01-10 08:08:49.854   637  1012 D ImsSenderRxr: getImsSubConfig
+01-10 08:08:49.854   637  1012 D ImsSenderRxr: [0002] > REQUEST_GET_IMS_SUB_CONFIG [SUB0]
+01-10 08:08:49.887   637  1012 D ImsSenderRxr: getImsSubConfigResponse errorCode = 0
+01-10 08:08:49.887   637  1012 D         : ImsSubConfigDetails simultStackCount: 1
+01-10 08:08:49.887   637  1012 D         : mImsStackEnabled[0] = true
+01-10 08:08:49.887   637  1012 D         : mImsStackEnabled[1] = false
+01-10 08:08:49.887   637  1012 D         : mImsStackEnabled[2] = false
+01-10 08:08:49.887   637  1012 D ImsSenderRxr: [0002] < REQUEST_GET_IMS_SUB_CONFIG [SUB0]
+01-10 08:08:49.887   637  1012 D ImsSubController: Received solicited IMS response REQUEST_GET_IMS_SUB_CONFIG
+01-10 08:08:49.887   637  1012 D         : ImsSubConfigDetails simultStackCount: 1
+01-10 08:08:49.887   637  1012 D         : mImsStackEnabled[0] = true
+01-10 08:08:49.887   637  1012 D         : mImsStackEnabled[1] = false
+01-10 08:08:49.887   637  1012 D         : mImsStackEnabled[2] = false
+01-10 08:08:49.887   637  1012 D ImsSubController: handleSubConfigChanged mActiveStacks[0] = true
+01-10 08:08:49.887   637  1012 D ImsSubController: handleSubConfigChanged phoneId = 0
+01-10 08:08:49.887   637  1012 D ImsSubController: notifyStackConfigChanged phoneId = 0
+01-10 08:08:49.887   637  1012 D ImsSubController: activeStack[0] = true
+01-10 08:08:49.887   637  1012 D ImsServiceSub: onStackConfigChanged
+01-10 08:08:49.887   637  1012 D ImsServiceSub: onStackConfigChanged activeStacks[0] = true
+01-10 08:08:49.887   637  1012 D ImsServiceSub: onStackConfigChanged oldFeatureState = 2 mFeatureState = 2
+01-10 08:08:55.981   642  1034 E storaged: getService package_native failed
+01-10 08:08:59.037   355   413 D vold    : Waiting for FUSE to spin up...
+01-10 08:08:59.088   355   413 D vold    : Waiting for FUSE to spin up...
+01-10 08:08:59.118  1734  1734 W sdcard  : Device explicitly enabled sdcardfs
+01-10 08:08:59.140   355   355 D vold    : Linking /storage/emulated/0 to /mnt/user/0/primary
+01-10 08:08:59.142   355   355 D vold    : /system/bin/sgdisk
+01-10 08:08:59.142   355   355 D vold    :     --android-dump
+01-10 08:08:59.142   355   355 D vold    :     /dev/block/vold/disk:179,64
+01-10 08:08:59.424   355   355 D vold    : DISK mbr
+01-10 08:08:59.424   355   355 D vold    : 
+01-10 08:08:59.424   355   355 D vold    : PART 1 c
+01-10 08:08:59.424   355   355 D vold    : 
+01-10 08:08:59.429   355   355 D vold    : /system/bin/blkid
+01-10 08:08:59.429   355   355 D vold    :     -c
+01-10 08:08:59.429   355   355 D vold    :     /dev/null
+01-10 08:08:59.429   355   355 D vold    :     -s
+01-10 08:08:59.429   355   355 D vold    :     TYPE
+01-10 08:08:59.429   355   355 D vold    :     -s
+01-10 08:08:59.429   355   355 D vold    :     UUID
+01-10 08:08:59.429   355   355 D vold    :     -s
+01-10 08:08:59.429   355   355 D vold    :     LABEL
+01-10 08:08:59.429   355   355 D vold    :     /dev/block/vold/public:179,65
+01-10 08:08:59.641   355   355 D vold    : /dev/block/vold/public:179,65: UUID="3336-3134" TYPE="vfat" 
+01-10 08:08:59.641   355   355 D vold    : 
+01-10 08:08:59.643   355   355 D vold    : /system/bin/fsck_msdos
+01-10 08:08:59.643   355   355 D vold    :     -p
+01-10 08:08:59.643   355   355 D vold    :     -f
+01-10 08:08:59.643   355   355 D vold    :     -y
+01-10 08:08:59.643   355   355 D vold    :     /dev/block/vold/public:179,65
+01-10 08:08:59.946   355   355 D vold    : /dev/block/vold/public:179,65: 29 files, 2913568 free (484265 clusters)
+01-10 08:08:59.946   355   355 D vold    : 
+01-10 08:08:59.947   355   355 I vold    : Filesystem check completed OK
+01-10 08:09:00.004   355   355 D vold    : Linking /mnt/media_rw/3336-3134 to /mnt/user/0/primary
+01-10 08:09:06.449   513   513 I android.hardware.wifi@1.0-service: Wifi HAL started
+01-10 08:09:06.695   513   513 I android.hardware.wifi@1.0-service: Adding interface handle for wlan0
+01-10 08:09:06.695   513   513 I android.hardware.wifi@1.0-service: Adding interface handle for p2p0
+01-10 08:09:06.695   513   513 W android.hardware.wifi@1.0-service: No active wlan interfaces in use! Using default
+01-10 08:09:06.696   513   513 W android.hardware.wifi@1.0-service: No active wlan interfaces in use! Using default
+01-10 08:09:06.700   513   513 I android.hardware.wifi@1.0-service: Configured chip in mode 0
+01-10 08:09:06.700   513   513 W android.hardware.wifi@1.0-service: No active wlan interfaces in use! Using default
+01-10 08:09:08.050   677   677 I wificond: setting base_wiphy_index_ to 0
+01-10 08:09:08.052   677   677 I wificond: create scanner for interface with index: 26
+01-10 08:09:08.052   677   677 I wificond: subscribe scan result for interface with index: 26
+01-10 08:09:08.060   677   677 E wificond: No Offload Service available
+01-10 08:09:08.060   677   677 I wificond: Offload HAL not supported 
+01-10 08:09:09.134   862   862 D RILC    : setRadioPower: serial 102 on 1
+01-10 08:09:09.611   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:09:09.677   637  1463 D ImsConfigImpl: setConfigInt item = 27 value = 2
+01-10 08:09:09.708   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:09:09.713   637  1241 D ImsService: turnOnIms slotId = 0 on = true
+01-10 08:09:09.713   637  1241 D ImsSenderRxr: sendImsRegistrationState
+01-10 08:09:09.713   637  1241 D ImsSenderRxr: [0004] > REQUEST_IMS_REG_STATE_CHANGE [SUB0]
+01-10 08:09:09.714   862  1232 D RILC    : radioStateChangedInd: radioState 10
+01-10 08:09:09.745   637  1012 D ImsSenderRxr: onRadioStateChanged
+01-10 08:09:09.745   637  1012 D         : radioState = 2
+01-10 08:09:09.745   637  1012 D ImsSenderRxr: [UNSOL] < UNSOL_RADIO_STATE_CHANGED [SUB0]
+01-10 08:09:09.745   637  1012 D ImsSubController: Received unsolicited IMS response UNSOL_RADIO_STATE_CHANGED
+01-10 08:09:09.745   637  1012 D ImsSubController: handleRadioStateChanged radioState = 2 phoneId = 0
+01-10 08:09:09.745   637  1012 D ImsSenderRxr: getImsSubConfig
+01-10 08:09:09.745   637  1012 D ImsSenderRxr: [0005] > REQUEST_GET_IMS_SUB_CONFIG [SUB0]
+01-10 08:09:09.771   637  1242 D CapabilityStatus: mCapability = 1 mStatus = 1 mRadioTech = 1
+01-10 08:09:09.771   637  1242 D         : buildServiceStatusInfo srvType = 0 rat = 14 enabled = 2
+01-10 08:09:09.771   637  1242 D CapabilityStatus: mCapability = 1 mStatus = 1 mRadioTech = 2
+01-10 08:09:09.771   637  1242 D         : buildServiceStatusInfo srvType = 0 rat = 19 enabled = 2
+01-10 08:09:09.771   637  1242 D CapabilityStatus: mCapability = 8 mStatus = 1 mRadioTech = 1
+01-10 08:09:09.771   637  1242 D         : buildServiceStatusInfo srvType = 5 rat = 14 enabled = 2
+01-10 08:09:09.771   637  1242 D CapabilityStatus: mCapability = 8 mStatus = 1 mRadioTech = 2
+01-10 08:09:09.771   637  1242 D         : buildServiceStatusInfo srvType = 5 rat = 19 enabled = 2
+01-10 08:09:09.771   637  1242 D ImsSenderRxr: [0003] > REQUEST_SET_SERVICE_STATUS [SUB0]
+01-10 08:09:09.772   637  1463 D ImsSenderRxr: [0006] > REQUEST_SET_IMS_CONFIG [SUB0]
+01-10 08:09:09.772   637  1463 D ImsSenderRxr: REQUEST_SET_IMS_CONFIG request to ImsRadio: token 6 item: 29  boolValue: false intValue: 2 strValue:  errorCause: 0
+01-10 08:09:09.788   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:09:09.823   637  1012 D ImsSenderRxr: getImsSubConfigResponse errorCode = 0
+01-10 08:09:09.823   637  1012 D         : ImsSubConfigDetails simultStackCount: 1
+01-10 08:09:09.823   637  1012 D         : mImsStackEnabled[0] = true
+01-10 08:09:09.823   637  1012 D         : mImsStackEnabled[1] = false
+01-10 08:09:09.823   637  1012 D         : mImsStackEnabled[2] = false
+01-10 08:09:09.823   637  1012 D ImsSenderRxr: [0005] < REQUEST_GET_IMS_SUB_CONFIG [SUB0]
+01-10 08:09:09.823   637  1012 D ImsSubController: Received solicited IMS response REQUEST_GET_IMS_SUB_CONFIG
+01-10 08:09:09.823   637  1012 D         : ImsSubConfigDetails simultStackCount: 1
+01-10 08:09:09.823   637  1012 D         : mImsStackEnabled[0] = true
+01-10 08:09:09.823   637  1012 D         : mImsStackEnabled[1] = false
+01-10 08:09:09.823   637  1012 D         : mImsStackEnabled[2] = false
+01-10 08:09:09.823   637  1012 D ImsSubController: handleSubConfigChanged mActiveStacks[0] = true
+01-10 08:09:09.823   637  1012 D ImsSubController: handleSubConfigChanged phoneId = 0
+01-10 08:09:09.823   637  1012 D ImsSubController: notifyStackConfigChanged phoneId = 0
+01-10 08:09:09.823   637  1012 D ImsSubController: activeStack[0] = true
+01-10 08:09:09.823   637  1012 D ImsServiceSub: onStackConfigChanged
+01-10 08:09:09.823   637  1012 D ImsServiceSub: onStackConfigChanged activeStacks[0] = true
+01-10 08:09:09.824   637  1012 D ImsServiceSub: onStackConfigChanged oldFeatureState = 2 mFeatureState = 2
+01-10 08:09:09.826   862  1232 I RILQ    : (0/862):RIL[0][(862,1232)] qcril_qmi_imss_set_ims_service_enable_config_resp_ims_reg_change_hdlr: ril_err: 0, qmi res: 0
+01-10 08:09:09.826   637  1012 D ImsSenderRxr: requestRegistrationChangeResponse errorCode = 0
+01-10 08:09:09.826   637  1012 D ImsSenderRxr: [0004] < REQUEST_IMS_REG_STATE_CHANGE [SUB0]
+01-10 08:09:09.826   637  1012 D ImsServiceSub: Received solicited IMS response REQUEST_IMS_REG_STATE_CHANGE
+01-10 08:09:09.826   862  1232 I RILQ    : (0/862):RIL[0][(862,1232)] qcril_qmi_imss_set_ims_service_enable_config_resp_hdlr: ril_err: 0, qmi res: 0
+01-10 08:09:09.827   637  1012 D ImsSenderRxr: setServiceStatusResponse errorCode = 0
+01-10 08:09:09.827   637  1012 D ImsSenderRxr: [0003] < REQUEST_SET_SERVICE_STATUS [SUB0]
+01-10 08:09:09.827   637  1012 D ImsConfigImpl: Received solicited IMS response REQUEST_SET_SERVICE_STATUS
+01-10 08:09:09.829   637  1012 D ImsSenderRxr: setConfigResponse_1_6 errorCode = 0
+01-10 08:09:09.829   637  1012 D ImsSenderRxr: [0006] < REQUEST_SET_IMS_CONFIG [SUB0]
+01-10 08:09:09.829   637  1012 D ImsConfigImpl: Received solicited IMS response REQUEST_SET_IMS_CONFIG
+01-10 08:09:09.829   637  1012 D ImsConfigImpl: onSetImsConfigDone
+01-10 08:09:09.829   637  1012 D         : ImsConfigItem item:29 boolValue:false intValue:0 stringValue: errorCause: 0
+01-10 08:09:10.010   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:09:10.885   677   677 I wificond: Regulatory domain changed to country: TW
+01-10 08:09:10.887   677   677 I wificond: 2.4Ghz frequencies: 2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462
+01-10 08:09:10.887   677   677 I wificond: 5Ghz non-DFS frequencies:
+01-10 08:09:10.887   677   677 I wificond: 5Ghz DFS frequencies:
+01-10 08:09:10.440   862  1232 I chatty  : uid=1001(radio) DispatcherModul identical 3 lines
+01-10 08:09:10.450   862  1232 E RILQ    : (0/862): RIL[0][(862,1232)] get_ecc_property_name: ecc list name : ril.ecclist.
+01-10 08:09:10.920   637  1463 D ImsConfigImpl: setConfigInt item = 66 value = 0
+01-10 08:09:10.920   637  1463 D ImsSenderRxr: [0007] > REQUEST_SET_IMS_CONFIG [SUB0]
+01-10 08:09:10.920   637  1463 D ImsSenderRxr: REQUEST_SET_IMS_CONFIG request to ImsRadio: token 7 item: 70  boolValue: false intValue: 0 strValue:  errorCause: 0
+01-10 08:09:10.930   637  1012 D ImsSenderRxr: setConfigResponse_1_6 errorCode = 0
+01-10 08:09:10.930   637  1012 D ImsSenderRxr: [0007] < REQUEST_SET_IMS_CONFIG [SUB0]
+01-10 08:09:10.930   637  1012 D ImsConfigImpl: Received solicited IMS response REQUEST_SET_IMS_CONFIG
+01-10 08:09:10.930   637  1012 D ImsConfigImpl: onSetImsConfigDone
+01-10 08:09:10.930   637  1012 D         : ImsConfigItem item:70 boolValue:false intValue:0 stringValue: errorCause: 0
+--------- beginning of main
+04-01 17:41:48.221  1601  1601 I TelephonyIPCService: constructor
+04-01 17:41:48.263  1601  1601 I FocusManager: << focus() called >>
+04-01 17:41:48.263  1601  1601 I FocusManager:    trying to set focus on, tag: DIV, id: Tutorial, class: Tutorial
+04-01 17:41:48.264  1601  1601 I FocusManager:    current focused element, NULL, tag: , id: , class: 
+04-01 17:41:48.289  1601  1601 I Gecko   : WebViewChild: 
+04-01 17:41:48.289  1601  1601 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo)  
+04-01 17:41:48.290  1601  1601 I Gecko   : 
+04-01 17:41:48.291  1601  1601 I Gecko   : WebViewChild: 
+04-01 17:41:48.291   607   607 I chatty  : uid=0(root) /system/b2g/b2g expire 37 lines
+04-01 17:41:48.292  1601  1601 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) SoftRight: next 
+04-01 17:41:48.292  1601  1601 I Gecko   : 
+04-01 17:41:48.384   607  1723 I chatty  : uid=0(root) FS Broker 1601 expire 6 lines
+04-01 17:41:48.385  1601  1601 E libc    : Access denied finding property "sys.use_memfd"
+04-01 17:41:48.391  1601  1601 E /system/b2g/b2g: Failed to get IAshmemDeviceService.
+04-01 17:41:48.436  1601  1601 I Gecko   : WebViewChild: 
+04-01 17:41:48.436  1601  1601 I Gecko   : Got afterpaint event: http://launcher.localhost/index.html#tutorial 
+04-01 17:41:48.436  1601  1601 I Gecko   : 
+04-01 17:41:48.459   608  1059 I chatty  : uid=0(root) actix-rt:worker expire 97 lines
+04-01 17:41:48.572   848   848 E cutils-trace: Error opening trace file: No such file or directory (2)
+04-01 17:41:48.580   608  2285 I chatty  : uid=0(root) uds server expire 1 line
+04-01 17:41:48.610   608  1058 I chatty  : uid=0(root) actix-rt:worker expire 37 lines
+04-01 17:41:48.653   608  2292 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.654   608  2293 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.655   608  2294 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.655   608  2295 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.671   500   500 W DeviceHAL: Error from HAL Device in function get_mic_mute: Function not implemented
+04-01 17:41:48.671   500   500 I chatty  : uid=1041(audioserver) audio@2.0-servi identical 1 line
+04-01 17:41:48.671   500   500 W DeviceHAL: Error from HAL Device in function get_mic_mute: Function not implemented
+04-01 17:41:48.701   608  2298 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.703   608  2299 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.703   608  2301 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.704   608  2303 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.705   608  2302 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.706   608  2304 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:48.780   608  1057 I chatty  : uid=0(root) actix-rt:worker expire 31 lines
+04-01 17:41:48.788   608  1060 I chatty  : uid=0(root) actix-rt:worker expire 45 lines
+04-01 17:41:48.847  1601  2313 E /system/b2g/b2g: Failed to get IAshmemDeviceService.
+04-01 17:41:48.851  1989  1989 I Gecko   : console.log: "Websocket: opened"
+04-01 17:41:48.852  1601  2313 E /system/b2g/b2g: Failed to get IAshmemDeviceService.
+04-01 17:41:48.856  1601  2314 E /system/b2g/b2g: Failed to get IAshmemDeviceService.
+04-01 17:41:48.858  1601  2312 E /system/b2g/b2g: Failed to get IAshmemDeviceService.
+04-01 17:41:48.863  1989  1989 I Web Content: Content JS LOG: 
+04-01 17:41:48.893  1601  2313 E /system/b2g/b2g: Failed to get IAshmemDeviceService.
+04-01 17:41:48.918  1989  1989 I Gecko   : console.log: "Got ack: {\"success\":true}"
+04-01 17:41:48.918  1989  1989 I Web Content: Content JS LOG: 
+04-01 17:41:48.920  1989  1989 I Gecko   : console.log: "[LibSession] onsessionconnected"
+04-01 17:41:48.920  1989  1989 I Web Content: Content JS LOG: 
+04-01 17:41:48.921  1989  1989 I Gecko   : console.log: "[LibSession] sessionInit"
+04-01 17:41:48.922  1989  1989 I Web Content: Content JS LOG: 
+04-01 17:41:48.967  1989  1989 I Gecko   : console.log: "[LibSession] services-load-complete"
+04-01 17:41:48.968  1989  1989 I Web Content: Content JS LOG: 
+04-01 17:41:49.013   608  2319 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.114   608  2325 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.151  2084  2084 I Gecko   : console.log: "Websocket: opened"
+04-01 17:41:49.164  2084  2084 I Web Content: Content JS LOG: 
+04-01 17:41:49.194   607  1387 I chatty  : uid=0(root) Binder:607_1 expire 2 lines
+04-01 17:41:49.195  1601  1601 I Gecko   : console.log: "Websocket: opened"
+04-01 17:41:49.196  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:49.235   637  1012 D ImsSenderRxr: onRegistrationChanged_1_6
+04-01 17:41:49.236   637  1012 D         : ImsRegistrationInfo state: 3 errorCode: 0 errorMessage:  radioTech: 14 pAssociatedUris: 
+04-01 17:41:49.236   637  1012 D ImsSenderRxr: [UNSOL] < UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED [SUB0]
+04-01 17:41:49.236   637  1012 D ImsServiceSub: Received unsolicited IMS response UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED
+04-01 17:41:49.236   637  1012 D         : ImsRegistrationInfo state: 3 errorCode: 0 errorMessage:  radioTech: 14 pAssociatedUris: 
+04-01 17:41:49.236   637  1012 D ImsSenderRxr: [0008] > REQUEST_QUERY_SERVICE_STATUS [SUB0]
+04-01 17:41:49.236   637  1012 D ImsRegistrationImpl: onRegistering imsRadioTech = 0
+04-01 17:41:49.237   607  1739 I chatty  : uid=0(root) Binder:607_4 expire 5 lines
+04-01 17:41:49.277  2084  2084 I Gecko   : console.log: "Got ack: {\"success\":true}"
+04-01 17:41:49.278  2084  2084 I Web Content: Content JS LOG: 
+04-01 17:41:49.280  2084  2084 I Gecko   : console.log: "[LibSession] onsessionconnected"
+04-01 17:41:49.280  2084  2084 I Web Content: Content JS LOG: 
+04-01 17:41:49.281  2084  2084 I Gecko   : console.log: "[LibSession] sessionInit"
+04-01 17:41:49.282  2084  2084 I Web Content: Content JS LOG: 
+04-01 17:41:49.316   637  1012 D ImsSenderRxr: queryServiceStatusResponse_1_6 errorCode = 0
+04-01 17:41:49.316   637  1012 D         : StatusForAccessTech NetworkMode = 0 registered = 2 Status = 0 restrictCause = 0
+04-01 17:41:49.316   637  1012 D ImsSenderRxr: [0008] < REQUEST_QUERY_SERVICE_STATUS [SUB0]
+04-01 17:41:49.316   637  1012 D ImsServiceSub: Received solicited IMS response REQUEST_QUERY_SERVICE_STATUS
+04-01 17:41:49.317   637  1012 D ImsServiceSub: type = 5 status = 0 isvalid = true
+04-01 17:41:49.317   637  1012 I ImsServiceSub: Call Type 5 has num updates = 
+04-01 17:41:49.317   637  1012 D         : StatusForAccessTech NetworkMode = 0 registered = 2 Status = 0 restrictCause = 0
+04-01 17:41:49.317   637  1012 D ImsServiceSub: canAddCapability capability: 8 registrationTech: 0
+04-01 17:41:49.325  1559  1559 I b2gkillerd: b2gkillerd has kicked 607
+04-01 17:41:49.345   637  1463 D ImsRegistrationImpl: getRegistrationTechnology mImsRadioTech = 1
+04-01 17:41:49.363  1601  1601 I Gecko   : WebViewChild: 
+04-01 17:41:49.364  1601  1601 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) SoftRight: Next 
+04-01 17:41:49.364  1601  1601 I Gecko   : 
+04-01 17:41:49.428  2084  2084 I Gecko   : console.log: "[LibSession] services-load-complete"
+04-01 17:41:49.430  2084  2084 I Web Content: Content JS LOG: 
+04-01 17:41:49.471   608  2332 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.472   608  2330 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.473   608  2331 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.520  1601  1832 I Gecko   : console.log: "service_worker: system message" "activity"
+04-01 17:41:49.538  2084  2084 W Web Content: [JavaScript Warning: "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user’s experience. For more help http://xhr.spec.whatwg.org/" {file: "http://ftu.localhost/js/utils.js" line: 1}]
+04-01 17:41:49.546  1601  1832 I Gecko   : console.log: "service_worker: matchAll success!"
+04-01 17:41:49.636  1989  1989 E Web Content: [JavaScript Error: "NS_ERROR_ABORT"]
+04-01 17:41:49.647  1601  1601 I Gecko   : console.log: "Got ack: {\"success\":true}"
+04-01 17:41:49.679  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:49.682  1601  1601 I Gecko   : console.log: "[LibSession] onsessionconnected"
+04-01 17:41:49.686  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:49.687  1601  1601 I Gecko   : console.log: "[LibSession] sessionInit"
+04-01 17:41:49.691  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:49.746  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:49.797  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:49.820  1601  1601 I Gecko   : console.log: "[LibSession] services-load-complete"
+04-01 17:41:49.820  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:49.868   608  2340 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.883   608  2341 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.883   608  2343 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.884   608  2346 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.888   608  2348 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.891   608  2345 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.901   608  2344 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.903   608  2347 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.904   608  2349 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.904   608  2342 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:49.933  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:49.933  2084  2084 I FocusManager:    trying to set focus on, tag: FORM, id: softkeyPanel, class: skbar none-paddings visible focused
+04-01 17:41:49.943  2084  2084 I FocusManager: Warning: element is not focusable.
+04-01 17:41:49.946  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:49.946  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo)  
+04-01 17:41:49.946  2084  2084 I Gecko   : 
+04-01 17:41:49.949  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:49.950  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) SoftRight: Next 
+04-01 17:41:49.950  2084  2084 I Gecko   : 
+04-01 17:41:50.008  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:50.008  2084  2084 I FocusManager:    trying to set focus on, tag: LI, id: , class: focus
+04-01 17:41:50.008  2084  2084 I FocusManager: Warning: element is not focusable.
+04-01 17:41:50.011  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:50.012  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) SoftLeft: Readout, Enter: Select, SoftRight: Next 
+04-01 17:41:50.012  2084  2084 I Gecko   : 
+04-01 17:41:50.013  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:50.013  2084  2084 I FocusManager:    trying to set focus on, tag: FORM, id: softkeyPanel, class: skbar none-paddings visible focused
+04-01 17:41:50.050  2084  2084 I FocusManager: Warning: element is not focusable.
+04-01 17:41:50.064   500   500 D audio_hw_primary: out_standby: enter: stream (0xa8138000) usecase(1: low-latency-playback)
+04-01 17:41:50.131   608  2355 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 7 lines
+04-01 17:41:50.163   500   500 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+04-01 17:41:50.174   637  1012 D ImsSenderRxr: onRegistrationChanged_1_6
+04-01 17:41:50.174   637  1012 D         : ImsRegistrationInfo state: 1 errorCode: 0 errorMessage:  radioTech: 14 pAssociatedUris: sip:+886966640236@ims.mnc001.mcc466.3gppnetwork.org|tel:+886966640236
+04-01 17:41:50.174   637  1012 D ImsSenderRxr: [UNSOL] < UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED [SUB0]
+04-01 17:41:50.174   637  1012 D ImsServiceSub: Received unsolicited IMS response UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED
+04-01 17:41:50.174   637  1012 D         : ImsRegistrationInfo state: 1 errorCode: 0 errorMessage:  radioTech: 14 pAssociatedUris: sip:+886966640236@ims.mnc001.mcc466.3gppnetwork.org|tel:+886966640236
+04-01 17:41:50.174   637  1012 D ImsSenderRxr: [0009] > REQUEST_QUERY_SERVICE_STATUS [SUB0]
+04-01 17:41:50.175   637  1012 D ImsRegistrationImpl: onRegistered imsRadioTech = 1
+04-01 17:41:50.177   637  1012 D ImsSenderRxr: queryServiceStatusResponse_1_6 errorCode = 0
+04-01 17:41:50.177   637  1012 D         : StatusForAccessTech NetworkMode = 0 registered = 2 Status = 0 restrictCause = 0
+04-01 17:41:50.177   637  1012 D ImsSenderRxr: [0009] < REQUEST_QUERY_SERVICE_STATUS [SUB0]
+04-01 17:41:50.177   637  1012 D ImsServiceSub: Received solicited IMS response REQUEST_QUERY_SERVICE_STATUS
+04-01 17:41:50.177   637  1012 D ImsServiceSub: type = 5 status = 0 isvalid = true
+04-01 17:41:50.177   637  1012 I ImsServiceSub: Call Type 5 has num updates = 
+04-01 17:41:50.177   637  1012 D         : StatusForAccessTech NetworkMode = 0 registered = 2 Status = 0 restrictCause = 0
+04-01 17:41:50.177   637  1012 D ImsServiceSub: canAddCapability capability: 8 registrationTech: 0
+04-01 17:41:50.177   500   500 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+04-01 17:41:50.177   500   500 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:41:50.177   500   500 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:41:50.177   500   500 D hardware_info: hw_info_append_hw_type : device_name = headphones
+04-01 17:41:50.177   500   500 D audio_hw_primary: disable_snd_device: snd_device(9: headphones)
+04-01 17:41:50.177   500   500 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:41:50.185   500   500 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x9 of type 0 for Event 0, with Raise=0
+04-01 17:41:50.185   500   500 D audio_hw_primary: out_standby: exit
+04-01 17:41:50.244  1601  1601 I GeckoDump: [launcher] Disabling DUMP
+04-01 17:41:50.268   637  1012 D ImsSenderRxr: onServiceStatusChanged_1_6
+04-01 17:41:50.268   637  1012 D         : StatusForAccessTech NetworkMode = 14 registered = 2 Status = 0 restrictCause = 0
+04-01 17:41:50.268   637  1012 D         : StatusForAccessTech NetworkMode = 14 registered = 1 Status = 2 restrictCause = 0
+04-01 17:41:50.268   637  1012 I chatty  : uid=1001(radio) HwBinder:637_1 identical 2 lines
+04-01 17:41:50.268   637  1012 D         : StatusForAccessTech NetworkMode = 14 registered = 1 Status = 2 restrictCause = 0
+04-01 17:41:50.268   637  1012 D ImsSenderRxr: [UNSOL] < UNSOL_SRV_STATUS_UPDATE [SUB0]
+04-01 17:41:50.268   637  1012 D ImsServiceSub: Received unsolicited IMS response UNSOL_SRV_STATUS_UPDATE
+04-01 17:41:50.268   637  1012 D ImsServiceSub: type = 5 status = 0 isvalid = true
+04-01 17:41:50.268   637  1012 I ImsServiceSub: Call Type 5 has num updates = 
+04-01 17:41:50.268   637  1012 D         : StatusForAccessTech NetworkMode = 14 registered = 2 Status = 0 restrictCause = 0
+04-01 17:41:50.268   637  1012 D ImsServiceSub: canAddCapability capability: 8 registrationTech: 1
+04-01 17:41:50.268   637  1012 D ImsServiceSub: canAddCapability status: 0
+04-01 17:41:50.268   637  1012 D ImsServiceSub: type = 0 status = 2 isvalid = true
+04-01 17:41:50.268   637  1012 I ImsServiceSub: Call Type 0 has num updates = 
+04-01 17:41:50.268   637  1012 D         : StatusForAccessTech NetworkMode = 14 registered = 1 Status = 2 restrictCause = 0
+04-01 17:41:50.268   637  1012 D ImsServiceSub: canAddCapability capability: 1 registrationTech: 1
+04-01 17:41:50.268   637  1012 D ImsServiceSub: canAddCapability status: 2
+04-01 17:41:50.268   637  1012 D ImsServiceSub: type = 3 status = 2 isvalid = true
+04-01 17:41:50.268   637  1012 I ImsServiceSub: Call Type 3 has num updates = 
+04-01 17:41:50.268   637  1012 D         : StatusForAccessTech NetworkMode = 14 registered = 1 Status = 2 restrictCause = 0
+04-01 17:41:50.268   637  1012 D ImsServiceSub: canAddCapability capability: 2 registrationTech: 1
+04-01 17:41:50.268   637  1012 D ImsServiceSub: canAddCapability status: 2
+04-01 17:41:50.268   637  1012 D ImsServiceSub: type = 1 status = 2 isvalid = true
+04-01 17:41:50.269   637  1012 I ImsServiceSub: Call Type 1 has num updates = 
+04-01 17:41:50.269   637  1012 D         : StatusForAccessTech NetworkMode = 14 registered = 1 Status = 2 restrictCause = 0
+04-01 17:41:50.269   637  1012 D ImsServiceSub: canAddCapability capability: 2 registrationTech: 1
+04-01 17:41:50.269   637  1012 D ImsServiceSub: canAddCapability status: 2
+04-01 17:41:50.269   637  1012 D ImsServiceSub: type = 2 status = 2 isvalid = true
+04-01 17:41:50.269   637  1012 I ImsServiceSub: Call Type 2 has num updates = 
+04-01 17:41:50.269   637  1012 D         : StatusForAccessTech NetworkMode = 14 registered = 1 Status = 2 restrictCause = 0
+04-01 17:41:50.269   637  1012 D ImsServiceSub: canAddCapability capability: 2 registrationTech: 1
+04-01 17:41:50.269   637  1012 D ImsServiceSub: canAddCapability status: 2
+04-01 17:41:50.323   637  1463 D ImsRegistrationImpl: getRegistrationTechnology mImsRadioTech = 1
+04-01 17:41:50.912  1559  1559 I b2gkillerd: Try to kill process with priority 3
+04-01 17:41:51.299   551   569 E Sensors : sns_debug_main.c(161):Debug Timer Callback called
+04-01 17:41:52.292   608  1058 I chatty  : uid=0(root) actix-rt:worker expire 25 lines
+04-01 17:41:52.304   608  1059 I chatty  : uid=0(root) actix-rt:worker expire 34 lines
+04-01 17:41:52.358   608  1060 I chatty  : uid=0(root) actix-rt:worker expire 42 lines
+04-01 17:41:52.377   608  1057 I chatty  : uid=0(root) actix-rt:worker expire 35 lines
+04-01 17:41:53.140   607   607 I chatty  : uid=0(root) /system/b2g/b2g expire 7 lines
+04-01 17:41:53.702   607  2367 I chatty  : uid=0(root) /system/b2g/b2g expire 20 lines
+04-01 17:41:53.788   520   520 W ServiceUtilities: retreivePackageManager: failed to retrieve native package manager
+04-01 17:41:53.788   520   520 W ServiceUtilities: doIsAllowed: Playback capture is denied as package manager is not reachable
+04-01 17:41:53.892   500   500 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+04-01 17:41:53.899   500   500 I audio_hw_primary: getting vr mode to 0
+04-01 17:41:53.902   500   500 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+04-01 17:41:53.913   520   520 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+04-01 17:41:53.948   520   520 D AudioFlinger: Client defaulted notificationFrames to 320 for frameCount 648
+04-01 17:41:53.952   520   520 D AF::TrackHandle: OpPlayAudio: track:56 usage:1 not muted
+04-01 17:41:53.999   520   889 W AudioFlinger: no wake lock to update, system not ready yet
+04-01 17:41:54.002   520   889 W BatteryNotifier: batterystats service unavailable!
+04-01 17:41:54.002   500  2158 D audio_hw_primary: start_output_stream: enter: stream(0xa8138000)usecase(1: low-latency-playback) devices(0x4)
+04-01 17:41:54.090   500  2158 E ANDR-PERF: IPerf:: Perf HAL Service is not available.
+04-01 17:41:54.090   500  2158 E audio_hw_extn: audio_extn_perf_lock_acquire: Failed to acquire perf lock, err: -1
+04-01 17:41:54.090   500  2158 D audio_hw_primary: select_devices for use case (low-latency-playback)
+04-01 17:41:54.090   500  2158 D audio_hw_extn: audio_extn_get_anc_enabled: anc_enabled:0
+04-01 17:41:54.090   500  2158 D audio_hw_primary: select_devices: out_snd_device(9: headphones) in_snd_device(0: )
+04-01 17:41:54.090   500  2158 I msm8916_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (headphones)
+04-01 17:41:54.090   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(1) new_snd_devices(0)
+04-01 17:41:54.090   500  2158 I msm8916_platform: platform_check_and_set_codec_backend_cfg: becf: new_snd_devices[0] is headphones
+04-01 17:41:54.090   500  2158 I msm8916_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 current bit width: 16 sample rate: 48000 channels: 2 usecase 1 device (headphones)
+04-01 17:41:54.090   500  2158 D msm8916_platform: platform_check_codec_backend_cfg:becf: afe: napb not active - set non fractional rate
+04-01 17:41:54.090   500  2158 D msm8916_platform: platform_check_codec_backend_cfg:becf: afe: only 48KHZ sample rate is supported Configure afe to default Sample Rate(48k)
+04-01 17:41:54.091   500  2158 I msm8916_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 sample rate: 48000 channels: 2
+04-01 17:41:54.091   500  2158 E audio_route: unable to find path 'hph-lowpower-mode'
+04-01 17:41:54.091   500  2158 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+04-01 17:41:54.091   500  2158 E msm8916_platform: platform_check_backends_match: Invalid snd_device = 
+04-01 17:41:54.091   500  2158 D audio_hw_primary: check_usecases_codec_backend:becf: (63) check_usecases curr device: headphones, usecase device: backends match 0
+04-01 17:41:54.091   500  2158 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+04-01 17:41:54.091   500  2158 D hardware_info: hw_info_append_hw_type : device_name = headphones
+04-01 17:41:54.091   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:41:54.091   500  2158 D audio_hw_primary: enable_snd_device: snd_device(9: headphones)
+04-01 17:41:54.091   500  2158 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x9 of type 0 for Event 1, with Raise=0
+04-01 17:41:54.091   500  2158 D audio_route: Apply path: headphones
+04-01 17:41:54.095   500  2158 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+04-01 17:41:54.095   500  2158 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device headphones
+04-01 17:41:54.095   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:41:54.096   500  2158 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+04-01 17:41:54.096   500  2158 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 10, sample_rate 48000, snd_device_be_idx 43
+04-01 17:41:54.096   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(1) new_snd_devices(0)
+04-01 17:41:54.096   500  2158 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 10, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> send_asm_topology
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> send_adm_topology
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> send_audtable
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[10] app_type[69937]
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> send_audvoltable
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> send_audstrmtable
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> send_afe_topology
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 10, Topology Id 112fc
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> send_afe_cal
+04-01 17:41:54.099   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+04-01 17:41:54.101   500  2158 D         : Failed to fetch the lookup information of the device 0000000A 
+04-01 17:41:54.101   500  2158 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+04-01 17:41:54.101   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+04-01 17:41:54.101   500  2158 D         : Failed to fetch the lookup information of the device 0000000A 
+04-01 17:41:54.101   500  2158 D ACDB-LOADER: Error: ACDB AFE returned = -19
+04-01 17:41:54.101   500  2158 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[10]
+04-01 17:41:54.101   500  2158 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 10 path = 0
+04-01 17:41:54.101   500  2158 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+04-01 17:41:54.101   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:41:54.101   500  2158 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:41:54.101   500  2158 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+04-01 17:41:54.101   500  2158 D audio_route: Apply path: low-latency-playback
+04-01 17:41:54.103   500  2158 D audio_hw_primary: select_devices: done
+04-01 17:41:54.105   500  2158 D msm8916_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map12
+04-01 17:41:54.105   500  2158 D msm8916_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+04-01 17:41:54.153   500  2158 E audio_hw_extn: audio_extn_perf_lock_release: Perf lock release error 
+04-01 17:41:54.154   500  2158 D audio_hw_primary: start_output_stream: exit
+04-01 17:41:54.154   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:41:54.154   500  2158 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:41:54.154   520   888 E FastThread: did not receive expected priority boost on time
+04-01 17:41:54.243   608  2376 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:54.244   608  2377 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon expire 1 line
+04-01 17:41:54.434  1601  1601 I Gecko   : console.warn: "L10nError: \"Google\" not found in en-US in http://launcher.localhost/index.html"
+04-01 17:41:54.436  1601  1601 W Web Content: Content JS WARN: 
+04-01 17:41:54.453  1601  1601 I Gecko   : console.warn: "L10nError: \"Google\" not found in en-US in http://launcher.localhost/index.html"
+04-01 17:41:54.454  1601  1601 W Web Content: Content JS WARN: 
+04-01 17:41:54.460   520   520 W ServiceUtilities: retreivePackageManager: failed to retrieve native package manager
+04-01 17:41:54.460   520   520 W ServiceUtilities: doIsAllowed: Playback capture is denied as package manager is not reachable
+04-01 17:41:54.461   500   500 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+04-01 17:41:54.461   500   500 I audio_hw_primary: getting vr mode to 0
+04-01 17:41:54.461   500   500 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+04-01 17:41:54.462   520   520 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+04-01 17:41:54.463   520   520 D AudioFlinger: Client defaulted notificationFrames to 320 for frameCount 648
+04-01 17:41:54.467   520   520 D AF::TrackHandle: OpPlayAudio: track:57 usage:1 not muted
+04-01 17:41:54.479   520   889 W AudioFlinger: no wake lock to update, system not ready yet
+04-01 17:41:54.517   520   889 W AudioFlinger: no wake lock to update, system not ready yet
+04-01 17:41:54.603  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:54.603  2084  2084 I FocusManager:    trying to set focus on, tag: LI, id: , class: focus
+04-01 17:41:54.644   608  2285 I chatty  : uid=0(root) uds server expire 2 lines
+04-01 17:41:54.668  2084  2084 I FocusManager:    current focused element, NULL, tag: , id: , class: 
+04-01 17:41:54.671  2084  2084 I FocusManager: <- blur on, NULL, tag: , id: , class: 
+04-01 17:41:54.671  2084  2084 I FocusManager: -> focus is now on, tag: LI, id: , class: focus
+04-01 17:41:54.771  1601  1826 I Gecko   : console.log: "Websocket: opened"
+04-01 17:41:54.775  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:54.937  1601  1826 I Gecko   : console.log: "Got ack: {\"success\":true}"
+04-01 17:41:54.938  1601  1826 I Gecko   : console.log: "[LibSession] onsessionconnected"
+04-01 17:41:54.939  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:54.940  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:54.940  1601  1826 I Gecko   : console.log: "[LibSession] sessionInit"
+04-01 17:41:54.944  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.045  1601  1826 I Gecko   : console.log: "[LibSession] services-load-complete"
+04-01 17:41:55.046  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.062  1601  1837 I Gecko   : console.log: "Websocket: opened"
+04-01 17:41:55.064  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.068  1601  1837 I Gecko   : console.log: "Got ack: {\"success\":true}"
+04-01 17:41:55.068  1601  1837 I Gecko   : console.log: "[LibSession] onsessionconnected"
+04-01 17:41:55.068  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.069  1601  1837 I Gecko   : console.log: "[LibSession] sessionInit"
+04-01 17:41:55.069  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.070  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.083  1601  1837 I Gecko   : console.log: "[LibSession] services-load-complete"
+04-01 17:41:55.084  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.087  1601  1837 I Gecko   : console.log: "-*- CMAS utils -*- servicesInit success"
+04-01 17:41:55.089  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.095  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:55.096  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) Enter: Deselect, SoftRight: Next 
+04-01 17:41:55.096  2084  2084 I Gecko   : 
+04-01 17:41:55.098  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:55.098  2084  2084 I FocusManager:    trying to set focus on, tag: FORM, id: softkeyPanel, class: skbar none-paddings visible focused
+04-01 17:41:55.138  2084  2084 I FocusManager: Warning: element is not focusable.
+04-01 17:41:55.141  2084  2084 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:55.164  2084  2084 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLLIElement], class: focus
+04-01 17:41:55.252  1601  1818 I Gecko   : console.log: "communications: subscribe succeed telephony-call-ended"
+04-01 17:41:55.253  1601  1818 I Gecko   : console.log: "communications: subscribe errorSecurityError: The operation is insecure."
+04-01 17:41:55.254  1601  1818 I Gecko   : console.log: "communications: subscribe succeed bluetooth-dialer-command"
+04-01 17:41:55.254  1601  1818 I Gecko   : console.log: "communications: subscribe succeed activity"
+04-01 17:41:55.258  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.262  1601  1601 I chatty  : uid=12101(u0_a2101) launcher identical 2 lines
+04-01 17:41:55.263  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.270  1601  1818 I Gecko   : console.log: "communications sw install success!"
+04-01 17:41:55.272  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.278  1601  1818 I Gecko   : console.log: "communications sw activate success!"
+04-01 17:41:55.280  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.286  1601  1818 I Gecko   : console.log: "Websocket: opened"
+04-01 17:41:55.289  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.299  1601  1818 I Gecko   : console.log: "Got ack: {\"success\":true}"
+04-01 17:41:55.300  1601  1818 I Gecko   : console.log: "[LibSession] onsessionconnected"
+04-01 17:41:55.301  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.302  1601  1818 I Gecko   : console.log: "[LibSession] sessionInit"
+04-01 17:41:55.303  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.304  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.324  1601  1842 I Gecko   : console.log: "Websocket: opened"
+04-01 17:41:55.325  1601  1818 I Gecko   : console.log: "[LibSession] services-load-complete"
+04-01 17:41:55.327  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.328  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.337  1601  1842 I Gecko   : console.log: "Got ack: {\"success\":true}"
+04-01 17:41:55.338  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.338  1601  1842 I Gecko   : console.log: "[LibSession] onsessionconnected"
+04-01 17:41:55.339  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.348  1601  1842 I Gecko   : console.log: "[LibSession] sessionInit"
+04-01 17:41:55.349  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.376  1601  1842 I Gecko   : console.log: "[LibSession] services-load-complete"
+04-01 17:41:55.377  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.423   608  1057 I actix_web::middleware..: "GET /api/v1/shared/core.js HTTP/1.1" 127.0.0.1 200 2418 3.286510
+04-01 17:41:55.464   608  1057 I actix_web::middleware..: "GET /api/v1/shared/session.js HTTP/1.1" 127.0.0.1 200 2460 2.762553
+04-01 17:41:55.522   608  1057 I actix_web::middleware..: "GET /api/v1/settings/service.js HTTP/1.1" 127.0.0.1 200 3370 4.515990
+04-01 17:41:55.576   608  1057 I actix_web::middleware..: "GET /api/v1/contacts/service.js HTTP/1.1" 127.0.0.1 200 5668 3.178906
+04-01 17:41:55.642   607   607 I Gecko   : -*- ServiceWorkerAssistant : register http://wappush.localhost/sw_system_message.js success!
+04-01 17:41:55.642   607   607 I Gecko   : -*- ServiceWorkerAssistant : waitForRegistration done.
+04-01 17:41:55.644   607   607 I Gecko   : console.log: "Embedding: Embedder event: sw-registration-done"
+04-01 17:41:55.646   607   607 I GeckoConsole: Content JS LOG: 
+04-01 17:41:55.693  1601  1846 I Gecko   : console.log: "Websocket: opened"
+04-01 17:41:55.698  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.700  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:55.701  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) SoftRight: Skip 
+04-01 17:41:55.701  2084  2084 I Gecko   : 
+04-01 17:41:55.714   608  2394 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:55.715   608  2394 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 4 lines
+04-01 17:41:55.715   608  2394 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:55.715   608  2394 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:55.716   608  2394 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:55.716   608  2394 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:55.716   608  2394 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:55.718   608  1058 I api_daemon::session: Got client handshake
+04-01 17:41:55.727  1601  1846 I Gecko   : console.log: "Got ack: {\"success\":true}"
+04-01 17:41:55.728  2084  2084 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLLIElement], class: focus
+04-01 17:41:55.728  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.728  1601  1846 I Gecko   : console.log: "[LibSession] onsessionconnected"
+04-01 17:41:55.729  1601  1846 I Gecko   : console.log: "[LibSession] sessionInit"
+04-01 17:41:55.733  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.736  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.745   513  1940 V WifiHAL : event received NL80211_CMD_TRIGGER_SCAN
+04-01 17:41:55.745   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:55.745   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:55.747   608  1058 I settings_service::ser..: SettingsService::create
+04-01 17:41:55.749   608  1058 I contacts_service::ser..: ContactsService::create
+04-01 17:41:55.757   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:55.760   513  1940 I chatty  : uid=1010 wifi@1.0-servic identical 14 lines
+04-01 17:41:55.760   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:55.760  1601  1846 I Gecko   : console.log: "[LibSession] services-load-complete"
+04-01 17:41:55.759   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] wait_event:Wait done with Cmd 33
+04-01 17:41:55.762   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] do_listen_events: Rcvd valid Netlink Cmd 0 Err 0
+04-01 17:41:55.763  1601  1601 I Web Content: Content JS LOG: 
+04-01 17:41:55.766   607   607 E GeckoConsole: Content JS ERROR: 
+04-01 17:41:55.793   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:55.818   513  1940 I chatty  : uid=1010 wifi@1.0-servic identical 1 line
+04-01 17:41:55.866   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:55.871  2084  2084 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:55.926   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.022   513  1940 I chatty  : uid=1010 wifi@1.0-servic identical 2 lines
+04-01 17:41:56.056   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.068  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:56.069  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) SoftLeft: Deny, SoftRight: Allow 
+04-01 17:41:56.069  2084  2084 I Gecko   : 
+04-01 17:41:56.071  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:56.071  2084  2084 I FocusManager:    trying to set focus on, tag: FORM, id: softkeyPanel, class: skbar none-paddings visible focused
+04-01 17:41:56.074  2084  2084 I FocusManager: Warning: element is not focusable.
+04-01 17:41:56.077  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:56.077  2084  2084 I FocusManager:    trying to set focus on, tag: P, id: location-content, class: focus
+04-01 17:41:56.077  2084  2084 I FocusManager:    current focused element, tag: LI, id: , class: 
+04-01 17:41:56.077  2084  2084 I FocusManager: <- blur on, tag: LI, id: , class: 
+04-01 17:41:56.078  2084  2084 I FocusManager: -> focus is now on, tag: P, id: location-content, class: focus
+04-01 17:41:56.084  2084  2084 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:56.091   608  2395 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.091   608  2395 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 5 lines
+04-01 17:41:56.091   608  2395 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.091   608  2395 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:56.091   608  2395 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.091   608  2395 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:56.091   608  2395 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.106   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.130  2084  2084 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLParagraphElement], id: location-content, class: focus
+04-01 17:41:56.153   607  1508 E NetworkUtils: interface wlan0 is not present in any network
+04-01 17:41:56.157   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.226   513  1940 I chatty  : uid=1010 wifi@1.0-servic identical 1 line
+04-01 17:41:56.276   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.291  1941  1941 E wpa_supplicant: eap_proxy: eap_proxy_notify_config
+04-01 17:41:56.292  1941  1941 E wpa_supplicant: eap_proxy: eap_proxy_notify_config
+04-01 17:41:56.308   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.309   608  2396 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.309   608  2396 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 5 lines
+04-01 17:41:56.309   608  2396 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.309   608  2396 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:56.309   608  2396 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.309   608  2396 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:56.309   608  2396 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.313   608  1060 W api_daemon::session: Processing 'SettingsService request: SettingsFactorySet([SettingInfo { name: "time.timezone.automatic-update.enabled", value: JsonValue(Bool(true)) }])' took too long: 26ms
+04-01 17:41:56.321  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:56.321  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) Enter: Select, SoftRight: Next 
+04-01 17:41:56.321  2084  2084 I Gecko   : 
+04-01 17:41:56.322  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:56.322  2084  2084 I FocusManager:    trying to set focus on, tag: FORM, id: softkeyPanel, class: skbar none-paddings visible focused
+04-01 17:41:56.324  2084  2084 I FocusManager: Warning: element is not focusable.
+04-01 17:41:56.325   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.326   513  1940 I chatty  : uid=1010 wifi@1.0-servic identical 4 lines
+04-01 17:41:56.326   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.327  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:56.327  2084  2084 I FocusManager:    trying to set focus on, tag: LI, id: info-container, class: focus
+04-01 17:41:56.330  2084  2084 I FocusManager:    current focused element, tag: P, id: location-content, class: 
+04-01 17:41:56.330  2084  2084 I FocusManager: <- blur on, tag: P, id: location-content, class: 
+04-01 17:41:56.331  2084  2084 I FocusManager: -> focus is now on, tag: LI, id: info-container, class: focus
+04-01 17:41:56.336  1941  1941 E wpa_supplicant: eap_proxy: eap_proxy_notify_config
+04-01 17:41:56.336   513  1940 V WifiHAL : event received NL80211_CMD_SCAN_ABORTED
+04-01 17:41:56.337   730   764 D LOWI-8.6.0.81: [LOWINetlinkSocketReceiver] unpackRTMLinkMessage: RTM_NEWLINK - ifname wlan0, flags 0x1002 ()
+04-01 17:41:51.082  1559  1559 I b2gkillerd: Try to kill process with priority 3
+04-01 17:41:56.337   677   677 W wificond: Scan aborted
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] wait_event:Wait done with Cmd 35
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] do_listen_events: Rcvd valid Netlink Cmd 35 Err 0
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] do_listen_events:got scan abort message, return
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] No dump done. Error -1
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] WipsScanUsingNL: passive scan cached 0, took 13003 ms, err -1
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] lowi_proc_req_passive_scan_with_live_meas - No WLAN Frames to be parsed
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWIWifiDriverInterface] setMeasScanStatus:No measurements found Err = -1
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWIScanResultReceiver] Send scan meas to listener
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWIScanResultReceiver] Enter passive listening mode
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWIWifiDriverInterface] getMeasurements - Passive listening mode
+04-01 17:41:56.337   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] WipsScanUsingNL:wait -1 sec for netlink message
+04-01 17:41:56.337   730   769 D LOWI-8.6.0.81: [LOWIEventReceiver] handleEvent:FROM:NA, TO:NA, REQ:NA, IREQ:NA, REQ_ID:0, RESP:NA, INFO:NA
+04-01 17:41:56.337   730   769 D LOWI-8.6.0.81: [LOWIBackgroundScanMgr] isRspForBgScanMgr: evt(LOWI_NO_EVT) - not handled
+04-01 17:41:56.337   730   769 D LOWI-8.6.0.81: [LOWIScheduler] manageMsg: NULL results or NULL request in results
+04-01 17:41:56.337   730   769 D LOWI-8.6.0.81: [LOWIController] Measurements received
+04-01 17:41:56.337   730   769 D LOWI-8.6.0.81: [LOWICacheManager] putInCache:No measurements to put in cache
+04-01 17:41:56.337   730   769 D LOWI-8.6.0.81: [LOWIController] processMeasurementResults: No current Request. Cache measurements
+04-01 17:41:56.338   730   769 D LOWI-8.6.0.81: [LOWIControllerExtn] sendLOWILpDiscoveryScanResponse: Not a discovery scan response
+04-01 17:41:56.338   730   764 D LOWI-8.6.0.81: [LOWINetlinkSocketReceiver] processNetlinkPacket: ifname(wlan0) status(0)
+04-01 17:41:56.338   730   764 D LOWI-8.6.0.81: [LOWIController] intfStateReceived: ifname(wlan0) state(0)
+04-01 17:41:56.338   730   769 D LOWI-8.6.0.81: [LOWIEventReceiver] handleEvent:FROM:NA, TO:NA, REQ:NA, IREQ:NA, REQ_ID:0, RESP:NA, INFO:INTF-STATUS-UPDATE
+04-01 17:41:56.338  2084  2084 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLParagraphElement], id: location-content
+04-01 17:41:56.338   730   769 D LOWI-8.6.0.81: [LOWIEventReceiver] Info to [INTF-STATUS-UPDATE]
+04-01 17:41:56.338   730   769 D LOWI-8.6.0.81: [LOWIController] updateIntfState: WIFI enabled 0 mNlWifiStatus 1 mWifiStateEnabled 1
+04-01 17:41:56.338   730   769 D LOWI-8.6.0.81: [LOWIController] isWifiEnabled: mNlWifiStatus 0 mWifiStateEnabled 1
+04-01 17:41:56.338   730   769 I LOWI-8.6.0.81: [LOWIController] isWifiEnabled: Wifi is now disabled
+04-01 17:41:56.338   730   769 D LOWI-8.6.0.81: [LOWIController] terminateScanResultReceiver
+04-01 17:41:56.338   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] wips_wait_on_nl_socket: read returned 6, Received string: Close 
+04-01 17:41:56.338   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] do_listen_events: Select Error return - -301
+04-01 17:41:56.338   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] No dump done. Error -301
+04-01 17:41:56.338   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] WipsScanUsingNL: passive scan cached 0, took 1 ms, err -301
+04-01 17:41:56.338   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] lowi_proc_req_passive_scan_with_live_meas - No WLAN Frames to be parsed
+04-01 17:41:56.338   730  1943 D LOWI-8.6.0.81: [LOWIWifiDriverInterface] Scan terminated for passive listening request
+04-01 17:41:56.338   730  1943 I LOWI-8.6.0.81: [LOWIScanResultReceiver] Thread terminate was requested
+04-01 17:41:56.343  1941  1941 E wpa_supplicant: No VendorStaIfaceCallback is register
+04-01 17:41:56.350   608  2398 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.351   608  2398 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 5 lines
+04-01 17:41:56.351   608  2398 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.351   608  2398 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:56.351   608  2398 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.351   608  2398 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:56.351   608  2398 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.351   608  2398 E time_service::time_ma..: set timezone UTC+08:00 
+04-01 17:41:56.351   730  1943 D LOWI-8.6.0.81: [LOWI-Scan] Closing the pipe
+04-01 17:41:56.352   730   769 D LOWI-8.6.0.81: [LOWIScanResultReceiver] After join complete
+04-01 17:41:56.352   730   769 D LOWI-8.6.0.81: [LOWI-ROME-RTT] RomeUnblockRangingThread
+04-01 17:41:56.352   730  1944 D LOWI-8.6.0.81: [LOWI-ROME-RTT] RomeWaitOnActivityOnSocketOrPipe: Ranging thread Received string: Close, request socket shutdown 
+04-01 17:41:56.352   730  1944 D LOWI-8.6.0.81: [LOWIRangingFSM] FSM: Received Terminate Thread request from Controller
+04-01 17:41:56.352   730  1944 D LOWI-8.6.0.81: [LOWIROMEWifiDriver] FSM returned an non zero value indicating something bad happened
+04-01 17:41:56.352   730  1944 I LOWI-8.6.0.81: [LOWIScanResultReceiver] Thread terminate was requested
+04-01 17:41:56.352   730  1944 D LOWI-8.6.0.81: [LOWI-ROME-RTT] Closing the Ranging pipe
+04-01 17:41:56.352   730   769 D LOWI-8.6.0.81: [LOWIScanResultReceiver] After join complete
+04-01 17:41:56.352   730   769 D LOWI-8.6.0.81: [LOWIController] terminateWifiDriver
+04-01 17:41:56.369   641   833 I netd    : interfaceSetCfg() <39.52ms>
+04-01 17:41:56.389   608  2398 I common  : Checking event service #1 object #0 event #1 : false
+04-01 17:41:56.389   608  2398 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:56.389   608  2398 I common  : Checking event service #1 object #0 event #1 : false
+04-01 17:41:56.389   608  2398 I common  : Checking event service #11 object #0 event #1 : false
+04-01 17:41:56.389   608  2398 I common  : Checking event service #5 object #0 event #1 : false
+04-01 17:41:56.389   608  2398 I common  : Checking event service #1 object #0 event #1 : false
+04-01 17:41:56.389   608  2398 I common  : Checking event service #3 object #0 event #1 : false
+04-01 17:41:56.389   608  2398 I common  : Checking event service #1 object #0 event #1 : false
+04-01 17:41:56.391   608  2145 I time_service::service: incoming request
+04-01 17:41:56.391   608  2092 I time_service::service: incoming request
+04-01 17:41:56.391   608  1720 I time_service::service: incoming request
+04-01 17:41:56.391   608  2234 I time_service::service: incoming request
+04-01 17:41:56.392   608  1365 I time_service::service: incoming request
+04-01 17:41:56.402   607  1723 E Sandbox : SandboxBroker: denied op=open rflags=2400000 perms=0 path=/data/misc/zoneinfo/current/tzdata for pid=1601
+04-01 17:41:56.404   608  2397 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.404   608  2397 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 5 lines
+04-01 17:41:56.404   608  2397 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.404   608  2397 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:56.404   608  2397 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.404   608  2397 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:56.404   608  2397 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.413   608  1720 I time_service::service: TimeManager::format_request
+04-01 17:41:56.413   608  2145 I time_service::service: TimeManager::format_request
+04-01 17:41:56.413   608  1720 W api_daemon::session: Processing 'TimeManager service request: TimeObserverCallbackSuccess' took too long: 21ms
+04-01 17:41:56.413   608  2145 W api_daemon::session: Processing 'TimeManager service request: TimeObserverCallbackSuccess' took too long: 22ms
+04-01 17:41:56.413   608  2234 I time_service::service: TimeManager::format_request
+04-01 17:41:56.413   608  2092 I time_service::service: TimeManager::format_request
+04-01 17:41:56.413   608  2234 W api_daemon::session: Processing 'TimeManager service request: TimeObserverCallbackSuccess' took too long: 21ms
+04-01 17:41:56.413   608  2092 W api_daemon::session: Processing 'TimeManager service request: TimeObserverCallbackSuccess' took too long: 21ms
+04-01 17:41:56.413   608  1365 I time_service::service: TimeManager::format_request
+04-01 17:41:56.413   608  1365 W api_daemon::session: Processing 'TimeManager service request: TimeObserverCallbackSuccess' took too long: 20ms
+04-01 17:41:56.413   608  1365 I time_service::service: incoming request
+04-01 17:41:56.427   607  1723 E Sandbox : SandboxBroker: denied op=open rflags=2400000 perms=0 path=/data/misc/zoneinfo/current/tzdata for pid=1601
+04-01 17:41:56.432   607  1723 E Sandbox : SandboxBroker: denied op=open rflags=2440000 perms=0 path=/usr/share/zoneinfo/ for pid=1601
+04-01 17:41:56.433   608  1057 I time_service::service: incoming request
+04-01 17:41:56.438  2084  2084 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLLIElement], id: info-container, class: focus
+04-01 17:41:56.449   608  1059 I actix_web::middleware..: "GET /resources/mcc.json HTTP/1.1" shared.localhost 200 3580 2.398906
+04-01 17:41:56.464   608  1060 I time_service::service: incoming request
+04-01 17:41:56.482   608  1059 I time_service::service: incoming request
+04-01 17:41:56.493   608  1059 I actix_web::middleware..: "GET /resources/tz.json HTTP/1.1" shared.localhost 200 1314 4.224063
+04-01 17:41:56.507  1941  1941 I wpa_supplicant: wlan0: Do not deauthenticate as part of interface deinit since WoWLAN is enabled
+04-01 17:41:56.529   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.529   513  1940 I chatty  : uid=1010 wifi@1.0-servic identical 1 line
+04-01 17:41:56.531   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.544  1941  1941 E wpa_supplicant: eap_proxy: pthread_join on eap_proxy=0x7fbc611c
+04-01 17:41:56.544  1941  1941 E wpa_supplicant: eap_proxy: session not started for client = 1
+04-01 17:41:56.544  1941  1941 E wpa_supplicant: eap_proxy: Released QMI UIM service client
+04-01 17:41:56.545  1941  1941 E wpa_supplicant: eap_proxy: Released QMI EAP service client
+04-01 17:41:56.545  1941  1941 E wpa_supplicant: eap_proxy: session not started for client = 2
+04-01 17:41:56.546  1941  1941 E wpa_supplicant: eap_proxy: Released QMI UIM service client
+04-01 17:41:56.546  1941  1941 E wpa_supplicant: eap_proxy: Released QMI EAP service client
+04-01 17:41:56.548  1941  1941 I wpa_supplicant: eap_proxy: eap_proxy Deinitialzed
+04-01 17:41:56.553  2084  2084 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLLIElement], id: info-container, class: focus
+04-01 17:41:56.598   608  1059 I actix_web::middleware..: "GET /js/utils/components/component_utils.js HTTP/1.1" shared.localhost 200 727 1.637865
+04-01 17:41:56.600   608  1057 W api_daemon::session: Processing 'SettingsService request: SettingsFactorySet([SettingInfo { name: "time.timezone", value: JsonValue(String("Asia/Taipei")) }])' took too long: 31ms
+04-01 17:41:56.604  1941  1941 I wpa_supplicant: nl80211: deinit ifname=wlan0 disabled_11b_rates=0
+04-01 17:41:56.605   608  2399 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.605   608  2399 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 5 lines
+04-01 17:41:56.605   608  2399 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.605   608  2399 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:56.605   608  2399 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.605   608  2399 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:56.605   608  2399 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:56.605   608  2399 E time_service::time_ma..: set timezone Asia/Taipei 
+04-01 17:41:56.612   608  1059 I actix_web::middleware..: "GET /js/helper/dialog/confirm_dialog_helper.js HTTP/1.1" shared.localhost 200 3412 4.337344
+04-01 17:41:56.619   608  2399 I common  : Checking event service #1 object #0 event #1 : false
+04-01 17:41:56.619   608  2399 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:56.619   608  2399 I common  : Checking event service #1 object #0 event #1 : false
+04-01 17:41:56.619   608  2399 I common  : Checking event service #11 object #0 event #1 : false
+04-01 17:41:56.619   608  2399 I common  : Checking event service #5 object #0 event #1 : false
+04-01 17:41:56.619   608  2399 I common  : Checking event service #1 object #0 event #1 : false
+04-01 17:41:56.619   608  2399 I common  : Checking event service #3 object #0 event #1 : false
+04-01 17:41:56.619   608  2399 I common  : Checking event service #1 object #0 event #1 : false
+04-01 17:41:56.620   608  2145 I time_service::service: incoming request
+04-01 17:41:56.620   608  2234 I time_service::service: incoming request
+04-01 17:41:56.621   608  1365 I time_service::service: incoming request
+04-01 17:41:56.621   608  1365 I time_service::service: incoming request
+04-01 17:41:56.621   608  2092 I time_service::service: incoming request
+04-01 17:41:56.621   608  1720 I time_service::service: incoming request
+04-01 17:41:56.625  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:56.626  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo)  
+04-01 17:41:56.626  2084  2084 I Gecko   : 
+04-01 17:41:56.628  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:56.628  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) Enter: Select, SoftRight: Next 
+04-01 17:41:56.628  2084  2084 I Gecko   : 
+04-01 17:41:56.639  1941  1941 I wpa_supplicant: Try to unregister vendor interface
+04-01 17:41:56.658  2084  2084 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLLIElement], id: info-container, class: focus
+04-01 17:41:56.662   608  1057 I time_service::service: incoming request
+04-01 17:41:56.673   608  1060 I time_service::service: incoming request
+04-01 17:41:56.677   607  1723 E Sandbox : SandboxBroker: denied op=open rflags=2400000 perms=0 path=/data/misc/zoneinfo/current/tzdata for pid=1601
+04-01 17:41:56.700   677   677 I wificond: Unsubscribe scan result for interface with index: 26
+04-01 17:41:56.695   607  1723 E Sandbox : SandboxBroker: denied op=open rflags=2400000 perms=0 path=/data/misc/zoneinfo/current/tzdata for pid=1601
+04-01 17:41:56.711   608  1059 I actix_web::middleware..: "GET /elements/gaia_confirm/gaia_confirm.js HTTP/1.1" shared.localhost 200 778 1.473282
+04-01 17:41:56.730   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.730   513  1940 E WifiHAL : Invalid data received from driver
+04-01 17:41:56.748   608  1059 I time_service::service: incoming request
+04-01 17:41:56.765   513   513 W android.hardware.wifi@1.0-service: No active wlan interfaces in use! Using default
+04-01 17:41:56.777   513  1940 I WifiHAL : exit_event_handler, buf=E
+04-01 17:41:56.778   513   513 I WifiHAL : Sent msg on exit sock to unblock poll()
+04-01 17:41:56.790   513  1940 D WifiHAL : wlan_service_update_sys_param: /proc/sys/net/ipv4/tcp_limit_output_bytes 262144
+04-01 17:41:56.791   513  1940 D WifiHAL : wlan_service_update_sys_param: /proc/sys/net/ipv4/tcp_use_userconfig 0
+04-01 17:41:56.791   513  1940 D WifiHAL : wlan_service_update_sys_param: /proc/sys/net/ipv4/tcp_adv_win_scale 1
+04-01 17:41:56.791   513  1940 V WifiHAL : Successfully removed event handler for vendor 0x1374
+04-01 17:41:56.791   513  1940 E WifiHAL : 1 events were leftover without being freed
+04-01 17:41:56.791   513  1940 I android.hardware.wifi@1.0-service: Legacy HAL stop complete callback received
+04-01 17:41:56.793   513  1940 I WifiHAL : wifi_event_loop() exits success
+04-01 17:41:56.800  2084  2084 I FocusManager: << blur() called or ClearFocus called >>
+04-01 17:41:56.800  2084  2084 I FocusManager: <- blur on, tag: LI, id: info-container, class: focus
+04-01 17:41:56.803  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:56.803  2084  2084 I FocusManager:    trying to set focus on, tag: FORM, id: softkeyPanel, class: skbar none-paddings visible focused
+04-01 17:41:56.816  2084  2084 I FocusManager: Warning: element is not focusable.
+04-01 17:41:56.817  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:56.817  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) SoftLeft: Decline, SoftRight: Accept 
+04-01 17:41:56.817  2084  2084 I Gecko   : 
+04-01 17:41:56.878  2084  2084 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:56.879  2084  2084 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:56.939  2084  2084 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:57.007   730   764 D LOWI-8.6.0.81: [LOWINetlinkSocketReceiver] unpackRTMLinkMessage: RTM_DELLINK - ifname wlan0, flags 0x1002 ()
+04-01 17:41:57.007   730   764 D LOWI-8.6.0.81: [LOWINetlinkSocketReceiver] processNetlinkPacket: ifname(wlan0) status(0)
+04-01 17:41:57.007   730   764 D LOWI-8.6.0.81: [LOWIController] intfStateReceived: ifname(wlan0) state(0)
+04-01 17:41:57.007   730   769 D LOWI-8.6.0.81: [LOWIEventReceiver] handleEvent:FROM:NA, TO:NA, REQ:NA, IREQ:NA, REQ_ID:0, RESP:NA, INFO:INTF-STATUS-UPDATE
+04-01 17:41:57.007   730   769 D LOWI-8.6.0.81: [LOWIEventReceiver] Info to [INTF-STATUS-UPDATE]
+04-01 17:41:57.007   730   769 D LOWI-8.6.0.81: [LOWIController] updateIntfState: WIFI enabled 0 mNlWifiStatus 0 mWifiStateEnabled 0
+04-01 17:41:57.007   730   769 D LOWI-8.6.0.81: [LOWIController] isWifiEnabled: mNlWifiStatus 0 mWifiStateEnabled 0
+04-01 17:41:57.069  2084  2084 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:57.073   730   764 D LOWI-8.6.0.81: [LOWINetlinkSocketReceiver] unpackRTMLinkMessage: RTM_DELLINK - ifname p2p0, flags 0x1002 ()
+04-01 17:41:57.137  2084  2084 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:57.240  2084  2084 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:57.359  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:57.359  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo)  
+04-01 17:41:57.359  2084  2084 I Gecko   : 
+04-01 17:41:57.361  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:57.361  2084  2084 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) Enter: Select, SoftRight: Next 
+04-01 17:41:57.361  2084  2084 I Gecko   : 
+04-01 17:41:57.362  2084  2084 I FocusManager: << focus() called >>
+04-01 17:41:57.362  2084  2084 I FocusManager:    trying to set focus on, tag: LI, id: info-container, class: focus
+04-01 17:41:57.363  2084  2084 I FocusManager:    current focused element, NULL, tag: , id: , class: 
+04-01 17:41:57.363  2084  2084 I FocusManager: <- blur on, NULL, tag: , id: , class: 
+04-01 17:41:57.363  2084  2084 I FocusManager: -> focus is now on, tag: LI, id: info-container, class: focus
+04-01 17:41:57.388  2084  2084 I Gecko   : WebViewChild: 
+04-01 17:41:57.388  2084  2084 I Gecko   : Closing window [object Window] 
+04-01 17:41:57.388  2084  2084 I Gecko   : 
+04-01 17:41:57.389  2084  2084 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLBodyElement], class: theme-system
+04-01 17:41:57.446   607   607 I FocusManager: << blur() called or ClearFocus called >>
+04-01 17:41:57.446   607   607 I FocusManager: <- blur on, tag: browser, id: , class: 
+04-01 17:41:57.447  2084  2084 I FocusManager: <- blur on, tag: LI, id: info-container, class: focus
+04-01 17:41:57.458   607   607 I Gecko   : console.log: "Customization:SimConfig:FTU done or skiped."
+04-01 17:41:57.458   607   607 I GeckoConsole: Content JS LOG: 
+04-01 17:41:57.459   607   607 I Gecko   : console.log: "Customization:SimConfig:simConfigRun"
+04-01 17:41:57.460   607   607 I GeckoConsole: Content JS LOG: 
+04-01 17:41:57.464   607   607 I Gecko   : console.log: "[SilentInstallService]" "Start Activate"
+04-01 17:41:57.465   607   607 I GeckoConsole: Content JS LOG: 
+04-01 17:41:57.465   607   607 I Gecko   : console.log: "[SilentInstallService]" "isReady" (void 0) true true
+04-01 17:41:57.466   607   607 I GeckoConsole: Content JS LOG: 
+04-01 17:41:57.472   608  2402 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.473   608  2402 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 5 lines
+04-01 17:41:57.473   608  2402 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.473   608  2402 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:57.473   608  2402 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.473   608  2402 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:57.473   608  2402 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.479   607   607 I Gecko   : console.log: "Customization:SimConfig:get settings:{\"name\":\"sim.base.customization.enabled\",\"value\":false}"
+04-01 17:41:57.480   607   607 I GeckoConsole: Content JS LOG: 
+04-01 17:41:57.481   607   607 I Gecko   : console.log: "Customization:SimConfig:sim base customization is disabled"
+04-01 17:41:57.481   608  2403 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.481   608  2403 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 5 lines
+04-01 17:41:57.481   608  2403 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.481   608  2403 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:57.481   608  2403 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.481   608  2403 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:57.481   608  2403 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.481   607   607 I GeckoConsole: Content JS LOG: 
+04-01 17:41:57.483   607   607 I Gecko   : -*- ContentPermissionPrompt: prompt request.types[0]: device-storage:sdcard:read [System Principal]
+04-01 17:41:57.502   608  2404 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.502   608  2404 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 5 lines
+04-01 17:41:57.502   608  2404 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.503   608  2404 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:57.503   608  2404 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.503   608  2404 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:57.503   608  2404 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.507   608  2405 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.507   608  2405 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 5 lines
+04-01 17:41:57.507   608  2405 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.507   608  2405 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:41:57.507   608  2405 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.507   608  2405 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:41:57.507   608  2405 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:41:57.517   607   607 I FocusManager: << focus() called >>
+04-01 17:41:57.517   607   607 I FocusManager:    trying to set focus on, tag: DIV, id: , class: content p-ul
+04-01 17:41:57.527   607   607 I FocusManager:    current focused element, NULL, tag: , id: , class: 
+04-01 17:41:57.527   607   607 I FocusManager: <- blur on, NULL, tag: , id: , class: 
+04-01 17:41:57.527   607   607 I FocusManager: -> focus is now on, tag: DIV, id: , class: content p-ul
+04-01 17:41:57.570   607   607 I FocusManager: << focus() called >>
+04-01 17:41:57.570   607   607 I FocusManager:    trying to set focus on, tag: DIV, id: , class: content p-ul
+04-01 17:41:57.574   607   607 I FocusManager: Warning: element is already focused.
+04-01 17:41:57.594   607   607 I FocusManager: << focus() called >>
+04-01 17:41:57.594   607   607 I FocusManager:    trying to set focus on, tag: browser, id: , class: 
+04-01 17:41:57.595   607   607 I FocusManager:    current focused element, NULL, tag: , id: , class: 
+04-01 17:41:57.595   607   607 I FocusManager: <- blur on, NULL, tag: , id: , class: 
+04-01 17:41:57.595   607   607 I FocusManager: -> focus is now on, tag: browser, id: , class: 
+04-01 17:41:57.603  1601  1601 I FocusManager: * WindowRaised *
+04-01 17:41:57.604  1601  1601 I FocusManager: -> focus is now on, tag: DIV, id: Tutorial, class: Tutorial
+04-01 17:41:57.629   607   607 E GeckoConsole: [JavaScript Error: "uncaught exception: undefined"]
+04-01 17:41:57.633   513   513 I android.hardware.wifi@1.0-service: Wifi HAL stopped
+04-01 17:41:57.804  1601  1601 I Gecko   : WebViewChild: 
+04-01 17:41:57.804  1601  1601 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) SoftLeft: Back, Enter: OK 
+04-01 17:41:57.804  1601  1601 I Gecko   : 
+04-01 17:41:57.813  1601  1601 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:57.866  1601  1601 E /system/b2g/b2g: Failed to get IAshmemDeviceService.
+04-01 17:41:57.905  1601  1601 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:57.946   607   607 I Gecko   : console.warn: "screen.mozLockOrientation() returned false for" "http://launcher.localhost/manifest.webmanifest" "orientation" "natural"
+04-01 17:41:57.947   607   607 W GeckoConsole: Content JS WARN: 
+04-01 17:41:57.988  1601  1601 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:58.096  1601  1601 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:58.204  1601  1601 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:58.223   607   607 E GeckoConsole: [JavaScript Error: "NS_ERROR_FILE_NOT_FOUND: " {file: "resource://gre/modules/SessionStoreFunctions.jsm" line: 444}]
+04-01 17:41:58.223   607   607 E GeckoConsole: SSF_updateSessionStore@resource://gre/modules/SessionStoreFunctions.jsm:444:5
+04-01 17:41:58.223   607   607 E GeckoConsole: UpdateSessionStore@resource://gre/modules/SessionStoreFunctions.jsm:20:35
+04-01 17:41:58.224   608  1060 I settings_service::ser..: Dropping Settings Service #1
+04-01 17:41:58.224   608  1060 I devicecapability_serv..: Dropping DeviceCapabilityService #2
+04-01 17:41:58.224   608  1060 I apps_service::service: Dropping Apps Service #3
+04-01 17:41:58.246   608  1057 W api_daemon::session: Processing 'ProcManagerService request: ProcessServiceCommit' took too long: 20ms
+04-01 17:41:58.285   608  2319 I api_daemon::uds_server: Failed to read frame: IO Error: failed to fill whole buffer, closing uds session.
+04-01 17:41:58.285   608  2319 I geckobridge::service: Dropping GeckoBridge Service #1
+04-01 17:41:58.285   608  2321 I api_daemon::uds_server: Closing uds connection.
+04-01 17:41:58.289   608  2145 I api_daemon::uds_server: Failed to read frame: IO Error: failed to fill whole buffer, closing uds session.
+04-01 17:41:58.289   608  2147 I api_daemon::uds_server: Closing uds connection.
+04-01 17:41:58.306  1601  1601 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:58.345   607  2408 D         : PlayerBase::pause() from IPlayer
+04-01 17:41:58.347   607  2408 D AudioTrack: stop(31): called with 62720 frames delivered
+04-01 17:41:58.354   607  2408 D         : TrackPlayerBase::~TrackPlayerBase()
+04-01 17:41:58.354   607  2408 D         : PlayerBase::~PlayerBase()
+04-01 17:41:58.385  1601  1601 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:58.420   520   889 W AudioFlinger: no wake lock to update, system not ready yet
+04-01 17:41:58.421   520   889 W BatteryNotifier: batterystats service unavailable!
+04-01 17:41:58.450   607   607 I Gecko   : console.warn: "screen.mozLockOrientation() returned false for" "http://launcher.localhost/manifest.webmanifest" "orientation" "natural"
+04-01 17:41:58.452   607   607 W GeckoConsole: Content JS WARN: 
+04-01 17:41:58.453   607  1481 I Gecko   : 
+04-01 17:41:58.453   607  1481 I Gecko   : ###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+04-01 17:41:58.453   607  1481 I Gecko   : 
+04-01 17:41:58.453   607  1481 I chatty  : uid=0(root) Compositor identical 5 lines
+04-01 17:41:58.453   607  1481 I Gecko   : 
+04-01 17:41:58.453   607  1481 I Gecko   : ###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+04-01 17:41:58.453   607  1481 I Gecko   : 
+04-01 17:41:58.454   607  1481 I Gecko   : 
+04-01 17:41:58.454   607  1481 I Gecko   : ###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0050,name=PCompositorBridge::Msg_ReleaseSharedCompositorFrameMetrics) Channel error: cannot send/recv
+04-01 17:41:58.454   607  1481 I Gecko   : 
+04-01 17:41:58.454   607  1481 I Gecko   : 
+04-01 17:41:58.454   607  1481 I Gecko   : ###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+04-01 17:41:58.454   607  1481 I Gecko   : 
+04-01 17:41:58.454   607  1481 I chatty  : uid=0(root) Compositor identical 6 lines
+04-01 17:41:58.454   607  1481 I Gecko   : 
+04-01 17:41:58.454   607  1481 I Gecko   : ###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+04-01 17:41:58.454   607  1481 I Gecko   : 
+04-01 17:41:58.454   607  1481 I Gecko   : 
+04-01 17:41:58.454   607  1481 I Gecko   : ###!!! [Parent][MessageChannel] Error: (msgtype=0xD,name=PAPZ::Msg_Destroy) Channel error: cannot send/recv
+04-01 17:41:58.454   607  1481 I Gecko   : 
+04-01 17:41:58.494  1601  1601 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:58.716   608  1549 I common  : Checking event service #5 object #0 event #1 : false
+04-01 17:41:58.717   608  1549 I common  : Checking event service #2 object #0 event #1 : false
+04-01 17:41:58.718   608  1549 I common  : Checking event service #1 object #0 event #1 : false
+04-01 17:41:58.719   608  1549 I common  : Checking event service #2 object #0 event #1 : false
+04-01 17:41:58.720   608  1549 I common  : Checking event service #4 object #0 event #1 : true
+04-01 17:41:58.721   608  1549 I common  : Checking event service #10 object #0 event #1 : false
+04-01 17:41:58.722   608  1549 I common  : Checking event service #5 object #0 event #3 : false
+04-01 17:41:58.722   608  1549 I common  : Checking event service #2 object #0 event #3 : false
+04-01 17:41:58.722   608  1549 I common  : Checking event service #1 object #0 event #3 : false
+04-01 17:41:58.722   608  1549 I common  : Checking event service #2 object #0 event #3 : false
+04-01 17:41:58.722   608  1549 I common  : Checking event service #4 object #0 event #3 : false
+04-01 17:41:58.722   608  1549 I common  : Checking event service #10 object #0 event #3 : false
+04-01 17:41:58.724   608  1549 W api_daemon::session: Processing 'SettingsService request: GeckoFeaturesImportSimContacts(Some([SimContactInfo { id: "898860181580046009061", tel: "55589714575", email: "", name: "kai89714575 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "898860181580046009062", tel: "55596738677", email: "", name: "kai96738677 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "898860181580046009063", tel: "55589845626", email: "", name: "kai89845626 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "898860181580046009064", tel: "55591610375", email: "", name: "kai91610375 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "898860181580046009065", tel: "55599220672", email: "", name: "kai99220672 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "898860181580046009066", tel: "55596549428", email: "", name: "kai96549428 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "898860181580046009067", tel: "55587133286", email: "", name: "kai87133286 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "898860181580046009068", tel: "55592632608", email: "", name: "kai92632608 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "898860181580046009069", tel: "55590411985", email: "", name: "kai90411985 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090610", tel: "55596610985", email: "", name: "kai96610985 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090611", tel: "55598110738", email: "", name: "kai98110738 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090612", tel: "55591475537", email: "", name: "kai91475537 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090613", tel: "55589892151", email: "", name: "kai89892151 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090614", tel: "55588012667", email: "", name: "kai88012667 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090615", tel: "55596254434", email: "", name: "kai96254434 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090616", tel: "55587470589", email: "", name: "kai87470589 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090617", tel: "55593947108", email: "", name: "kai93947108 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090618", tel: "55596176298", email: "", name: "kai96176298 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090619", tel: "55589344988", email: "", name: "kai89344988 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090620", tel: "55585350366", email: "", name: "kai85350366 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090621", tel: "55538874403", email: "", name: "kai38874403 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090622", tel: "55577259758", email: "", name: "kai77259758 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090623", tel: "55597412987", email: "", name: "kai97412987 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090624", tel: "55598246117", email: "", name: "kai98246117 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090625", tel: "55591040807", email: "", name: "kai91040807 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090626", tel: "55588210366", email: "", name: "kai88210366 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090627", tel: "55584771811", email: "", name: "kai84771811 qa", category: "
+04-01 17:41:58.724   608  1549 W api_daemon::session: SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090628", tel: "55598562297", email: "", name: "kai98562297 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090629", tel: "55595802732", email: "", name: "kai95802732 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090630", tel: "55597206855", email: "", name: "kai97206855 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090631", tel: "55589367852", email: "", name: "kai89367852 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090633", tel: "55588750927", email: "", name: "kai88750927 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090634", tel: "55591390631", email: "", name: "kai91390631 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090635", tel: "55535583936", email: "", name: "kai35583936 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090636", tel: "55596061296", email: "", name: "kai96061296 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090638", tel: "55584297183", email: "", name: "kai84297183 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090640", tel: "55584350848", email: "", name: "kai84350848 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090641", tel: "55577758684", email: "", name: "kai77758684 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090642", tel: "55590264168", email: "", name: "kai90264168 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090643", tel: "55576233785", email: "", name: "kai76233785 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090644", tel: "55588009124", email: "", name: "kai88009124 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090646", tel: "55585223627", email: "", name: "kai85223627 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090647", tel: "55577980058", email: "", name: "kai77980058 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090649", tel: "55588133008", email: "", name: "kai88133008 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090651", tel: "55586879604", email: "", name: "kai86879604 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090652", tel: "55577580035", email: "", name: "kai77580035 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090653", tel: "55576921534", email: "", name: "kai76921534 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090654", tel: "55576233785", email: "", name: "kai76233785 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090656", tel: "55576233785", email: "", name: "kai76233785 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090659", tel: "55571703494", email: "", name: "kai71703494 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090663", tel: "55589196918", email: "", name: "kai89196918 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090664", tel: "55598460233", email: "", name: "kai98460233 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090666", tel: "55574813564", email: "", name: "kai74813564 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" }, SimContactInfo { id: "8988601815800460090667", tel: "55569175807", email: "", name: "kai69175807 qa", category: "SIM\u{1e}SIM0\u{1e}KAICONTACT" 
+04-01 17:41:58.724   608  1549 W api_daemon::session: }]))' took too long: 2762ms
+04-01 17:41:58.785   608  1057 I settings_service::ser..: Adding observer ObjectRef(1)
+04-01 17:41:58.836  1601  1601 I Gecko   : [Event] event type: keydown, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:58.867  1601  1601 I Gecko   : [Event] event type: keyup, key: SoftRight, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:58.968   608  1057 I settings_service::ser..: Adding observer ObjectRef(1)
+04-01 17:41:58.969   608  1057 I settings_service::ser..: Adding observer ObjectRef(1)
+04-01 17:41:59.231   608  1060 I actix_web::middleware..: "GET /ws HTTP/1.1" 127.0.0.1 101 2890 10117.297987
+04-01 17:41:59.389  1601  1601 I Gecko   : [Event] event type: keydown, key: Enter, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:59.393  1601  1601 I Gecko   : [Event] event type: keydown, key: MicrophoneToggle, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:59.548  1601  1601 I FocusManager: << focus() called >>
+04-01 17:41:59.548  1601  1601 I FocusManager:    trying to set focus on, tag: DIV, id: main-view, class: 
+04-01 17:41:59.548  1601  1601 I FocusManager:    current focused element, tag: DIV, id: Tutorial, class: Tutorial
+04-01 17:41:59.549  1601  1601 I FocusManager: <- blur on, tag: DIV, id: Tutorial, class: Tutorial
+04-01 17:41:59.551  1601  1601 I FocusManager: -> focus is now on, tag: DIV, id: main-view, class: 
+04-01 17:41:59.559  1601  1601 I Gecko   : console.warn: "L10nError: \"icon=all-apps\" not found in en-US in http://launcher.localhost/index.html"
+04-01 17:41:59.560  1601  1601 W Web Content: Content JS WARN: 
+04-01 17:41:59.561  1601  1601 I Gecko   : WebViewChild: 
+04-01 17:41:59.562  1601  1601 I Gecko   : Got metaChanged: (og:kaios:softkeyinfo) SoftLeft: Notices, Enter: icon=all-apps, SoftRight: Contacts 
+04-01 17:41:59.562  1601  1601 I Gecko   : 
+04-01 17:41:59.580  1601  1601 I Gecko   : [Event] event type: keyup, key: Enter, target: [object HTMLDivElement], id: Tutorial, class: Tutorial
+04-01 17:41:59.630   608  1059 I actix_web::middleware..: "GET /style/images/browser_56.png HTTP/1.1" launcher.localhost 200 5070 9.797241
+04-01 17:41:59.637   608  1060 I actix_web::middleware..: "GET /style/images/google_search_56.png HTTP/1.1" launcher.localhost 200 2987 15.904794
+04-01 17:41:59.668  1601  1601 I Gecko   : [Event] event type: keyup, key: MicrophoneToggle, target: [object HTMLDivElement], id: main-view, class: is-focus
+04-01 17:42:01.370   500   500 D audio_hw_primary: out_standby: enter: stream (0xa8138000) usecase(1: low-latency-playback)
+04-01 17:42:01.475   500   500 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+04-01 17:42:01.476   500   500 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+04-01 17:42:01.476   500   500 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:01.476   500   500 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:42:01.476   500   500 D hardware_info: hw_info_append_hw_type : device_name = headphones
+04-01 17:42:01.476   500   500 D audio_hw_primary: disable_snd_device: snd_device(9: headphones)
+04-01 17:42:01.476   500   500 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:01.480   500   500 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x9 of type 0 for Event 0, with Raise=0
+04-01 17:42:01.481   500   500 D audio_hw_primary: out_standby: exit
+04-01 17:42:04.469   505   579 I LocSvc_BatteryListener: operator():153] healthInfo cb thread: cb CHARGING
+04-01 17:42:04.488   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:04.522   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.517   627   627 I auditd  : type=1400 audit(0.0:50): avc: denied { read } for comm="vm_bms" name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:04.522   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 1 line
+04-01 17:42:04.522   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.517   627   627 W vm_bms  : type=1400 audit(0.0:50): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:04.517   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 1 line
+04-01 17:42:04.517   627   627 W vm_bms  : type=1400 audit(0.0:52): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:04.522   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.520   627   627 W vm_bms  : type=1400 audit(0.0:53): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:04.524   627   627 W vm_bms  : type=1400 audit(0.0:54): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:04.527   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.527   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.524   627   627 W vm_bms  : type=1400 audit(0.0:55): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:04.527   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.527   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.524   627   627 W vm_bms  : type=1400 audit(0.0:56): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:04.527   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.527   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 8 lines
+04-01 17:42:04.528   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.524   627   627 W vm_bms  : type=1400 audit(0.0:57): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:04.528   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.529   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 19 lines
+04-01 17:42:04.529   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.530   627   627 I VM_BMS  : power_supply_update: ocv_uv=4310561 ibatt=486732 soc=99 seq_num=1
+04-01 17:42:04.530   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.530   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:04.547   505   547 I LocSvc_SystemStatusOsObserver: DataItem: IS_POWER_CONNECTED: true >> Wiper
+04-01 17:42:04.574   607   607 E GeckoConsole: [JavaScript Error: "uncaught exception: undefined"]
+04-01 17:42:04.575   505   571 I LocSvc_api_v02: ---> locClientSendReq line 2345 QMI_LOC_SET_EXTERNAL_POWER_CONFIG_REQ_V02
+04-01 17:42:04.583   505   939 I LocSvc_ApiV02: <--- globalRespCb line 192 QMI_LOC_SET_EXTERNAL_POWER_CONFIG_REQ_V02
+04-01 17:42:04.654   599  1546 I adbd    : USB event: FUNCTIONFS_ENABLE
+04-01 17:42:04.661   607  2069 D         : PlayerBase::PlayerBase()
+04-01 17:42:04.662   607  2069 E         : PlayerBase(): binding to audio service failed, service up?
+04-01 17:42:04.662   607  2069 D         : TrackPlayerBase::TrackPlayerBase()
+04-01 17:42:04.662   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:04.662   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.functions_node, use default value.
+04-01 17:42:04.662   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:04.663   607  1353 E AutoMounter: Failed to get property, ro.b2g.ums.directory_node, use default value.
+04-01 17:42:04.663   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.directory_node, use default value.
+04-01 17:42:04.663   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.mode, use default value.
+04-01 17:42:04.663   607  1353 I AutoMounter: UpdateState: ums:A0C0E0 mtp:A1C0E0 mode:0 usb:1 tryToShare:0 state:IDLE
+04-01 17:42:04.663   607  1353 I AutoMounter: UpdateState: Volume sdcard is Mounted and inserted @ /mnt/vendor/usbmsc gen 1 locked 0 sharing x
+04-01 17:42:04.663   607  1353 I AutoMounter: UpdateState: Volume sdcard1 is Mounted and inserted @ /mnt/media_rw/3336-3134 gen 2 locked 0 sharing dis
+04-01 17:42:04.663   607  2069 I libOpenSLES: Emulating old channel mask behavior (ignoring positional mask 0x3, using default mask 0x3 based on channel count of 2)
+04-01 17:42:04.665   520  2379 W ServiceUtilities: retreivePackageManager: failed to retrieve native package manager
+04-01 17:42:04.665   520  2379 W ServiceUtilities: doIsAllowed: Playback capture is denied as package manager is not reachable
+04-01 17:42:04.666   500   500 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+04-01 17:42:04.666   500   500 I audio_hw_primary: getting vr mode to 0
+04-01 17:42:04.666   500   500 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+04-01 17:42:04.666   520  2379 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+04-01 17:42:04.667   520  2379 I AudioPolicyManagerCustom: FLAG None hence request for a primary output
+04-01 17:42:04.667   520  2379 W AudioFlinger: createTrack_l(): mismatch between requested flags (00000008) and output flags (00000006)
+04-01 17:42:04.667   520  2379 D AudioFlinger: Client defaulted notificationFrames to 886 for frameCount 1772
+04-01 17:42:04.669   520  2379 D AF::TrackHandle: OpPlayAudio: track:58 usage:5 not muted
+04-01 17:42:04.670   607  2069 E         : AudioPlayer realize: no audio service, player will not be registered
+04-01 17:42:04.694   607  2069 E libOpenSLES: Configuration error: unknown key
+04-01 17:42:04.694   607  2069 W libOpenSLES: Leaving AndroidConfiguration::GetConfiguration (SL_RESULT_PARAMETER_INVALID)
+04-01 17:42:04.695   520   889 W AudioFlinger: no wake lock to update, system not ready yet
+04-01 17:42:04.695   520   889 W BatteryNotifier: batterystats service unavailable!
+04-01 17:42:04.696   500  2158 D audio_hw_primary: start_output_stream: enter: stream(0xa8138000)usecase(1: low-latency-playback) devices(0x4)
+04-01 17:42:04.697   500  2158 E ANDR-PERF: IPerf:: Perf HAL Service is not available.
+04-01 17:42:04.697   500  2158 E audio_hw_extn: audio_extn_perf_lock_acquire: Failed to acquire perf lock, err: -1
+04-01 17:42:04.697   500  2158 D audio_hw_primary: select_devices for use case (low-latency-playback)
+04-01 17:42:04.697   500  2158 D audio_hw_extn: audio_extn_get_anc_enabled: anc_enabled:0
+04-01 17:42:04.697   500  2158 D audio_hw_primary: select_devices: out_snd_device(9: headphones) in_snd_device(0: )
+04-01 17:42:04.697   500  2158 I msm8916_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (headphones)
+04-01 17:42:04.697   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(1) new_snd_devices(0)
+04-01 17:42:04.697   500  2158 I msm8916_platform: platform_check_and_set_codec_backend_cfg: becf: new_snd_devices[0] is headphones
+04-01 17:42:04.697   500  2158 I msm8916_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 current bit width: 16 sample rate: 48000 channels: 2 usecase 1 device (headphones)
+04-01 17:42:04.697   500  2158 D msm8916_platform: platform_check_codec_backend_cfg:becf: afe: napb not active - set non fractional rate
+04-01 17:42:04.697   500  2158 D msm8916_platform: platform_check_codec_backend_cfg:becf: afe: only 48KHZ sample rate is supported Configure afe to default Sample Rate(48k)
+04-01 17:42:04.698   500  2158 I msm8916_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 sample rate: 48000 channels: 2
+04-01 17:42:04.698   500  2158 E audio_route: unable to find path 'hph-lowpower-mode'
+04-01 17:42:04.698   500  2158 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+04-01 17:42:04.698   500  2158 E msm8916_platform: platform_check_backends_match: Invalid snd_device = 
+04-01 17:42:04.698   500  2158 D audio_hw_primary: check_usecases_codec_backend:becf: (63) check_usecases curr device: headphones, usecase device: backends match 0
+04-01 17:42:04.698   500  2158 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+04-01 17:42:04.698   500  2158 D hardware_info: hw_info_append_hw_type : device_name = headphones
+04-01 17:42:04.698   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:04.698   500  2158 D audio_hw_primary: enable_snd_device: snd_device(9: headphones)
+04-01 17:42:04.698   500  2158 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x9 of type 0 for Event 1, with Raise=0
+04-01 17:42:04.698   500  2158 D audio_route: Apply path: headphones
+04-01 17:42:04.702   500  2158 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+04-01 17:42:04.702   500  2158 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device headphones
+04-01 17:42:04.702   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:04.703   500  2158 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+04-01 17:42:04.703   500  2158 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 10, sample_rate 48000, snd_device_be_idx 43
+04-01 17:42:04.703   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(1) new_snd_devices(0)
+04-01 17:42:04.703   500  2158 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 10, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> send_asm_topology
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> send_adm_topology
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> send_audtable
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[10] app_type[69937]
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> send_audvoltable
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> send_audstrmtable
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> send_afe_topology
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 10, Topology Id 112fc
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> send_afe_cal
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+04-01 17:42:04.703   500  2158 D         : Failed to fetch the lookup information of the device 0000000A 
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+04-01 17:42:04.703   500  2158 D         : Failed to fetch the lookup information of the device 0000000A 
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: Error: ACDB AFE returned = -19
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[10]
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 10 path = 0
+04-01 17:42:04.703   500  2158 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+04-01 17:42:04.703   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:04.703   500  2158 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:42:04.703   500  2158 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+04-01 17:42:04.704   500  2158 D audio_route: Apply path: low-latency-playback
+04-01 17:42:04.704   500  2158 D audio_hw_primary: select_devices: done
+04-01 17:42:04.706   500  2158 D msm8916_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map12
+04-01 17:42:04.706   500  2158 D msm8916_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+04-01 17:42:04.746   500  2158 E audio_hw_extn: audio_extn_perf_lock_release: Perf lock release error 
+04-01 17:42:04.746   500  2158 D audio_hw_primary: start_output_stream: exit
+04-01 17:42:04.746   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:04.746   500  2158 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:42:04.746   520   888 E FastThread: did not receive expected priority boost on time
+04-01 17:42:04.996   607  2069 D         : PlayerBase::pause() from IPlayer
+04-01 17:42:04.996   607  2069 D AudioTrack: stop(32): called with 12356 frames delivered
+04-01 17:42:04.997   607  2069 D         : TrackPlayerBase::~TrackPlayerBase()
+04-01 17:42:04.997   607  2069 D         : PlayerBase::~PlayerBase()
+04-01 17:42:05.067   520   889 W AudioFlinger: no wake lock to update, system not ready yet
+04-01 17:42:05.067   520   889 W BatteryNotifier: batterystats service unavailable!
+04-01 17:42:05.489   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:05.497   599   599 I adbd    : UsbFfs: already offline
+04-01 17:42:05.592   607   607 W GeckoConsole: [JavaScript Warning: "Cannot play media. No decoders for requested formats: video/ogg" {file: "chrome://system/content/index.html" line: 0}]
+04-01 17:42:06.490   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:07.490   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:08.000   500   500 D audio_hw_primary: out_standby: enter: stream (0xa8138000) usecase(1: low-latency-playback)
+04-01 17:42:08.106   500   500 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+04-01 17:42:08.107   500   500 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+04-01 17:42:08.107   500   500 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:08.107   500   500 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:42:08.107   500   500 D hardware_info: hw_info_append_hw_type : device_name = headphones
+04-01 17:42:08.107   500   500 D audio_hw_primary: disable_snd_device: snd_device(9: headphones)
+04-01 17:42:08.107   500   500 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:08.110   500   500 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x9 of type 0 for Event 0, with Raise=0
+04-01 17:42:08.111   500   500 D audio_hw_primary: out_standby: exit
+04-01 17:42:08.491   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:09.491   642  1034 W ServiceManager: Service package_native didn't start. Returning NULL
+04-01 17:42:09.492   642  1034 E storaged: getService package_native failed
+04-01 17:42:10.373   599  2430 I adbd    : adbd restarting as root
+04-01 17:42:10.617  2431  2432 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+04-01 17:42:10.623  2431  2432 I adbd    : UsbFfsConnection constructed
+04-01 17:42:10.624  2431  2433 I adbd    : USB event: FUNCTIONFS_BIND
+04-01 17:42:10.628   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:10.629   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.functions_node, use default value.
+04-01 17:42:10.629   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:10.629   607  1353 E AutoMounter: Failed to get property, ro.b2g.ums.directory_node, use default value.
+04-01 17:42:10.629   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.directory_node, use default value.
+04-01 17:42:10.629   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.mode, use default value.
+04-01 17:42:10.629   607  1353 I AutoMounter: UpdateState: ums:A0C0E0 mtp:A1C0E0 mode:0 usb:0 tryToShare:0 state:IDLE
+04-01 17:42:10.629   607  1353 I AutoMounter: UpdateState: Volume sdcard is Mounted and inserted @ /mnt/vendor/usbmsc gen 1 locked 0 sharing x
+04-01 17:42:10.629   607  1353 I AutoMounter: UpdateState: Volume sdcard1 is Mounted and inserted @ /mnt/media_rw/3336-3134 gen 2 locked 0 sharing dis
+04-01 17:42:10.807  2431  2433 I adbd    : USB event: FUNCTIONFS_ENABLE
+04-01 17:42:10.808   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:10.809   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.functions_node, use default value.
+04-01 17:42:10.809   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:10.809   607  1353 E AutoMounter: Failed to get property, ro.b2g.ums.directory_node, use default value.
+04-01 17:42:10.809   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.directory_node, use default value.
+04-01 17:42:10.809   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.mode, use default value.
+04-01 17:42:10.809   607  1353 I AutoMounter: UpdateState: ums:A0C0E0 mtp:A1C0E0 mode:0 usb:1 tryToShare:0 state:IDLE
+04-01 17:42:10.809   607  1353 I AutoMounter: UpdateState: Volume sdcard is Mounted and inserted @ /mnt/vendor/usbmsc gen 1 locked 0 sharing x
+04-01 17:42:10.809   607  1353 I AutoMounter: UpdateState: Volume sdcard1 is Mounted and inserted @ /mnt/media_rw/3336-3134 gen 2 locked 0 sharing dis
+04-01 17:42:11.495  2431  2431 I adbd    : UsbFfs: already offline
+04-01 17:42:04.524   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 6 lines
+04-01 17:42:04.524   627   627 I auditd  : type=1400 audit(0.0:57): avc: denied { read } for comm="vm_bms" name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:15.327  2437  2437 I auditd  : type=1400 audit(0.0:91): avc: denied { getattr } for comm="df" name="/" dev="mmcblk0p15" ino=1 scontext=u:r:su:s0 tcontext=u:object_r:firmware_file:s0 tclass=filesystem permissive=1
+04-01 17:42:15.327  2437  2437 I df      : type=1400 audit(0.0:91): avc: denied { getattr } for name="/" dev="mmcblk0p15" ino=1 scontext=u:r:su:s0 tcontext=u:object_r:firmware_file:s0 tclass=filesystem permissive=1
+04-01 17:42:19.463   607   607 I Gecko   : *** UTM:SVC TimerManager:registerTimer - timerID: telemetry_modules_ping interval: 604800 skipFirst: true
+04-01 17:42:19.463   607   607 I GeckoConsole: UTM:SVC TimerManager:registerTimer - timerID: telemetry_modules_ping interval: 604800 skipFirst: true
+04-01 17:42:24.740   608  1058 I settings_service::ser..: Dropping Settings Service #1
+04-01 17:42:25.058   608  1059 I settings_service::ser..: Dropping Settings Service #1
+04-01 17:42:25.326   608  1057 I settings_service::ser..: Dropping Settings Service #1
+04-01 17:42:25.481   522   522 I vendor.rmt_storage: rmt_storage_connect_cb: clnt_h=0xb conn_h=0xa750a020
+04-01 17:42:25.481   522   522 I vendor.rmt_storage: rmt_storage_rw_iovec_cb: /boot/modem_fs2: req_h=0xb msg_id=3: R/W request received (wr_count 1)
+04-01 17:42:25.481   522   522 I vendor.rmt_storage: wakelock acquired: 1, error no: 42
+04-01 17:42:25.481   522   917 I vendor.rmt_storage: rmt_storage_client_thread: /boot/modem_fs2: Unblock worker thread (th_id: -1490832848)
+04-01 17:42:25.661   608  1058 I settings_service::ser..: Dropping Settings Service #1
+04-01 17:42:25.709   522   917 I vendor.rmt_storage: rmt_storage_client_thread: /boot/modem_fs2: req_h=0xb msg_id=3: Bytes written = 1572864, wr_count 1
+04-01 17:42:25.709   522   917 I vendor.rmt_storage: rmt_storage_client_thread: /boot/modem_fs2: req_h=0xb msg_id=3: Send response: res=0 err=0, wr_count 1
+04-01 17:42:25.709   522   917 I vendor.rmt_storage: rmt_storage_client_thread: /boot/modem_fs2: About to block rmt_storage client thread (th_id: -1490832848) wakelock released: 1, error no: 0
+04-01 17:42:25.709   522   917 I vendor.rmt_storage: 
+04-01 17:42:25.710   522   522 I vendor.rmt_storage: rmt_storage_disconnect_cb: clnt_h=0xb conn_h=0xa750a020
+04-01 17:42:25.743   608  1058 I actix_web::middleware..: "GET /ws HTTP/1.1" 127.0.0.1 101 15 30999.073974
+04-01 17:42:26.060   608  1059 I actix_web::middleware..: "GET /ws HTTP/1.1" 127.0.0.1 101 15 31000.961057
+04-01 17:42:26.287   608  1060 I actix_web::middleware..: "GET /ws HTTP/1.1" 127.0.0.1 101 15 31007.241943
+04-01 17:42:26.329   608  1057 I actix_web::middleware..: "GET /ws HTTP/1.1" 127.0.0.1 101 25 31010.524027
+04-01 17:42:26.662   608  1058 I actix_web::middleware..: "GET /ws HTTP/1.1" 127.0.0.1 101 25 31000.192671
+04-01 17:42:27.301   608  1053 E telemetry: error recv from sock Sys(EAGAIN)
+04-01 17:42:30.695  2431  2433 I adbd    : USB event: FUNCTIONFS_SUSPEND
+04-01 17:42:30.695  2431  2433 I adbd    : USB event: FUNCTIONFS_DISABLE
+04-01 17:42:30.696  2431  2434 I adbd    : UsbFfs: connection terminated: read 153 failed with error Cannot send after transport endpoint shutdown
+04-01 17:42:30.696  2431  2431 I adbd    : UsbFfs: offline
+04-01 17:42:30.696  2431  2431 I adbd    : destroying transport UsbFfs
+04-01 17:42:30.696  2431  2431 I adbd    : UsbFfsConnection being destroyed
+04-01 17:42:30.700   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:30.700   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.functions_node, use default value.
+04-01 17:42:30.700   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:30.701   607  1353 E AutoMounter: Failed to get property, ro.b2g.ums.directory_node, use default value.
+04-01 17:42:30.701   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.directory_node, use default value.
+04-01 17:42:30.701   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.mode, use default value.
+04-01 17:42:30.701   607  1353 I AutoMounter: UpdateState: ums:A0C0E0 mtp:A1C0E0 mode:0 usb:0 tryToShare:0 state:IDLE
+04-01 17:42:30.701   607  1353 I AutoMounter: UpdateState: Volume sdcard is Mounted and inserted @ /mnt/vendor/usbmsc gen 1 locked 0 sharing x
+04-01 17:42:30.701   607  1353 I AutoMounter: UpdateState: Volume sdcard1 is Mounted and inserted @ /mnt/media_rw/3336-3134 gen 2 locked 0 sharing dis
+04-01 17:42:30.710   505   579 I LocSvc_BatteryListener: operator():153] healthInfo cb thread: cb NOT CHARGING
+04-01 17:42:30.713   505   547 I LocSvc_SystemStatusOsObserver: DataItem: IS_POWER_CONNECTED: false >> Wiper
+04-01 17:42:30.714   505   571 I LocSvc_api_v02: ---> locClientSendReq line 2345 QMI_LOC_SET_EXTERNAL_POWER_CONFIG_REQ_V02
+04-01 17:42:30.714   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:30.718   505   939 I LocSvc_ApiV02: <--- globalRespCb line 192 QMI_LOC_SET_EXTERNAL_POWER_CONFIG_REQ_V02
+04-01 17:42:30.769   607   607 E GeckoConsole: [JavaScript Error: "uncaught exception: undefined"]
+04-01 17:42:30.822  2431  2432 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+04-01 17:42:30.824  2431  2432 I adbd    : UsbFfsConnection constructed
+04-01 17:42:30.829  2431  2450 I adbd    : USB event: FUNCTIONFS_BIND
+04-01 17:42:31.705   608  2451 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:42:31.705   608  2451 I chatty  : uid=0(root) /data/local/service/api-daemon/api-daemon identical 1 line
+04-01 17:42:31.705   608  2451 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:42:31.705   608  2451 I common  : Checking event service #2 object #0 event #0 : false
+04-01 17:42:31.705   608  2451 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:42:31.705   608  2451 I common  : Checking event service #1 object #0 event #0 : false
+04-01 17:42:31.714   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:33.719   642  1034 I chatty  : uid=0(root) HwBinder:642_1 identical 2 lines
+04-01 17:42:34.721   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:35.722   642  1034 W ServiceManager: Service package_native didn't start. Returning NULL
+04-01 17:42:48.702   505   579 I LocSvc_BatteryListener: operator():153] healthInfo cb thread: cb CHARGING
+04-01 17:42:48.702   505   547 I LocSvc_SystemStatusOsObserver: DataItem: IS_POWER_CONNECTED: true >> Wiper
+04-01 17:42:48.702   505   571 I LocSvc_api_v02: ---> locClientSendReq line 2345 QMI_LOC_SET_EXTERNAL_POWER_CONFIG_REQ_V02
+04-01 17:42:48.705   505   939 I LocSvc_ApiV02: <--- globalRespCb line 192 QMI_LOC_SET_EXTERNAL_POWER_CONFIG_REQ_V02
+04-01 17:42:48.705   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:48.784   607   607 E GeckoConsole: [JavaScript Error: "uncaught exception: undefined"]
+04-01 17:42:48.837   607  2069 D         : PlayerBase::PlayerBase()
+04-01 17:42:48.838   607  2069 E         : PlayerBase(): binding to audio service failed, service up?
+04-01 17:42:48.838   607  2069 D         : TrackPlayerBase::TrackPlayerBase()
+04-01 17:42:48.838   607  2069 I libOpenSLES: Emulating old channel mask behavior (ignoring positional mask 0x3, using default mask 0x3 based on channel count of 2)
+04-01 17:42:48.839   520   520 W ServiceUtilities: retreivePackageManager: failed to retrieve native package manager
+04-01 17:42:48.840   520   520 W ServiceUtilities: doIsAllowed: Playback capture is denied as package manager is not reachable
+04-01 17:42:48.841   500   500 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+04-01 17:42:48.841   500   500 I audio_hw_primary: getting vr mode to 0
+04-01 17:42:48.841   500   500 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+04-01 17:42:48.845   520   520 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+04-01 17:42:48.846   520   520 I AudioPolicyManagerCustom: FLAG None hence request for a primary output
+04-01 17:42:48.846   520   520 W AudioFlinger: createTrack_l(): mismatch between requested flags (00000008) and output flags (00000006)
+04-01 17:42:48.847   520   520 D AudioFlinger: Client defaulted notificationFrames to 886 for frameCount 1772
+04-01 17:42:48.848   520   520 D AF::TrackHandle: OpPlayAudio: track:59 usage:5 not muted
+04-01 17:42:48.849   607  2069 E         : AudioPlayer realize: no audio service, player will not be registered
+04-01 17:42:48.849   607  2069 E libOpenSLES: Configuration error: unknown key
+04-01 17:42:48.850   607  2069 W libOpenSLES: Leaving AndroidConfiguration::GetConfiguration (SL_RESULT_PARAMETER_INVALID)
+04-01 17:42:48.851   520   889 W AudioFlinger: no wake lock to update, system not ready yet
+04-01 17:42:48.852   520   889 W BatteryNotifier: batterystats service unavailable!
+04-01 17:42:48.855   500  2158 D audio_hw_primary: start_output_stream: enter: stream(0xa8138000)usecase(1: low-latency-playback) devices(0x4)
+04-01 17:42:48.858   500  2158 E ANDR-PERF: IPerf:: Perf HAL Service is not available.
+04-01 17:42:48.858   500  2158 E audio_hw_extn: audio_extn_perf_lock_acquire: Failed to acquire perf lock, err: -1
+04-01 17:42:48.858   500  2158 D audio_hw_primary: select_devices for use case (low-latency-playback)
+04-01 17:42:48.858   500  2158 D audio_hw_extn: audio_extn_get_anc_enabled: anc_enabled:0
+04-01 17:42:48.858   500  2158 D audio_hw_primary: select_devices: out_snd_device(9: headphones) in_snd_device(0: )
+04-01 17:42:48.858   500  2158 I msm8916_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (headphones)
+04-01 17:42:48.858   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(1) new_snd_devices(0)
+04-01 17:42:48.858   500  2158 I msm8916_platform: platform_check_and_set_codec_backend_cfg: becf: new_snd_devices[0] is headphones
+04-01 17:42:48.858   500  2158 I msm8916_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 current bit width: 16 sample rate: 48000 channels: 2 usecase 1 device (headphones)
+04-01 17:42:48.858   500  2158 D msm8916_platform: platform_check_codec_backend_cfg:becf: afe: napb not active - set non fractional rate
+04-01 17:42:48.858   500  2158 D msm8916_platform: platform_check_codec_backend_cfg:becf: afe: only 48KHZ sample rate is supported Configure afe to default Sample Rate(48k)
+04-01 17:42:48.858   500  2158 I msm8916_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 sample rate: 48000 channels: 2
+04-01 17:42:48.858   500  2158 E audio_route: unable to find path 'hph-lowpower-mode'
+04-01 17:42:48.858   500  2158 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+04-01 17:42:48.858   500  2158 E msm8916_platform: platform_check_backends_match: Invalid snd_device = 
+04-01 17:42:48.858   500  2158 D audio_hw_primary: check_usecases_codec_backend:becf: (63) check_usecases curr device: headphones, usecase device: backends match 0
+04-01 17:42:48.858   500  2158 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+04-01 17:42:48.858   500  2158 D hardware_info: hw_info_append_hw_type : device_name = headphones
+04-01 17:42:48.858   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:48.858   500  2158 D audio_hw_primary: enable_snd_device: snd_device(9: headphones)
+04-01 17:42:48.858   500  2158 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x9 of type 0 for Event 1, with Raise=0
+04-01 17:42:48.858   500  2158 D audio_route: Apply path: headphones
+04-01 17:42:48.862   500  2158 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+04-01 17:42:48.862   500  2158 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device headphones
+04-01 17:42:48.862   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:48.862   500  2158 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+04-01 17:42:48.862   500  2158 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 10, sample_rate 48000, snd_device_be_idx 43
+04-01 17:42:48.863   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(1) new_snd_devices(0)
+04-01 17:42:48.863   500  2158 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 10, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> send_asm_topology
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> send_adm_topology
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> send_audtable
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[10] app_type[69937]
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> send_audvoltable
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> send_audstrmtable
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> send_afe_topology
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 10, Topology Id 112fc
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> send_afe_cal
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+04-01 17:42:48.863   500  2158 D         : Failed to fetch the lookup information of the device 0000000A 
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+04-01 17:42:48.863   500  2158 D         : Failed to fetch the lookup information of the device 0000000A 
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: Error: ACDB AFE returned = -19
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[10]
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 10 path = 0
+04-01 17:42:48.863   500  2158 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+04-01 17:42:48.863   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:48.863   500  2158 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:42:48.863   500  2158 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+04-01 17:42:48.863   500  2158 D audio_route: Apply path: low-latency-playback
+04-01 17:42:48.865   500  2158 D audio_hw_primary: select_devices: done
+04-01 17:42:48.866   500  2158 D msm8916_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map12
+04-01 17:42:48.866   500  2158 D msm8916_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+04-01 17:42:48.909   500  2158 E audio_hw_extn: audio_extn_perf_lock_release: Perf lock release error 
+04-01 17:42:48.910   500  2158 D audio_hw_primary: start_output_stream: exit
+04-01 17:42:48.910   500  2158 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:48.910   500  2158 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:42:48.910   520   888 E FastThread: did not receive expected priority boost on time
+04-01 17:42:49.116  2431  2450 I adbd    : USB event: FUNCTIONFS_ENABLE
+04-01 17:42:49.123   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:49.123   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.functions_node, use default value.
+04-01 17:42:49.123   607  1353 E AutoMounter: Failed to get property, ro.b2g.usb.state_node, use default value.
+04-01 17:42:49.124   607  1353 E AutoMounter: Failed to get property, ro.b2g.ums.directory_node, use default value.
+04-01 17:42:49.124   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.directory_node, use default value.
+04-01 17:42:49.124   607  1353 E AutoMounter: Failed to get property, ro.b2g.mtp.mode, use default value.
+04-01 17:42:49.124   607  1353 I AutoMounter: UpdateState: ums:A0C0E0 mtp:A1C0E0 mode:0 usb:1 tryToShare:0 state:IDLE
+04-01 17:42:49.124   607  1353 I AutoMounter: UpdateState: Volume sdcard is Mounted and inserted @ /mnt/vendor/usbmsc gen 1 locked 0 sharing x
+04-01 17:42:49.124   607  1353 I AutoMounter: UpdateState: Volume sdcard1 is Mounted and inserted @ /mnt/media_rw/3336-3134 gen 2 locked 0 sharing dis
+04-01 17:42:49.221   607  2069 D         : PlayerBase::pause() from IPlayer
+04-01 17:42:49.221   607  2069 D AudioTrack: stop(33): called with 14120 frames delivered
+04-01 17:42:49.223   607  2069 D         : TrackPlayerBase::~TrackPlayerBase()
+04-01 17:42:49.223   607  2069 D         : PlayerBase::~PlayerBase()
+04-01 17:42:49.243  2431  2431 I adbd    : UsbFfs: already offline
+04-01 17:42:49.294   520   889 W AudioFlinger: no wake lock to update, system not ready yet
+04-01 17:42:49.294   520   889 W BatteryNotifier: batterystats service unavailable!
+04-01 17:42:49.706   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:49.729   607   607 W GeckoConsole: [JavaScript Warning: "Cannot play media. No decoders for requested formats: video/ogg" {file: "chrome://system/content/index.html" line: 0}]
+04-01 17:42:50.707   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:51.708   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:52.228   500   500 D audio_hw_primary: out_standby: enter: stream (0xa8138000) usecase(1: low-latency-playback)
+04-01 17:42:52.341   500   500 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+04-01 17:42:52.341   500   500 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+04-01 17:42:52.341   500   500 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:52.341   500   500 I msm8916_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 1 uc_id 1 snd_dev 9
+04-01 17:42:52.341   500   500 D hardware_info: hw_info_append_hw_type : device_name = headphones
+04-01 17:42:52.341   500   500 D audio_hw_primary: disable_snd_device: snd_device(9: headphones)
+04-01 17:42:52.341   500   500 D msm8916_platform: platform_split_snd_device: snd_device(9) num devices(0) new_snd_devices(0)
+04-01 17:42:52.344   500   500 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x9 of type 0 for Event 0, with Raise=0
+04-01 17:42:52.344   500   500 D audio_hw_primary: out_standby: exit
+04-01 17:42:52.708   642  1034 I ServiceManager: Waiting for service 'package_native' on '/dev/binder'...
+04-01 17:42:52.737   627   627 I auditd  : type=1400 audit(0.0:92): avc: denied { read } for comm="vm_bms" name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:52.737   627   627 W vm_bms  : type=1400 audit(0.0:92): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:52.737   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 2 lines
+04-01 17:42:52.737   627   627 W vm_bms  : type=1400 audit(0.0:95): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:52.741   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:52.741   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 2 lines
+04-01 17:42:52.741   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:52.744   627   627 W vm_bms  : type=1400 audit(0.0:96): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:52.746   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:52.744   627   627 W vm_bms  : type=1400 audit(0.0:97): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:52.746   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:52.746   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 6 lines
+04-01 17:42:52.746   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:52.744   627   627 W vm_bms  : type=1400 audit(0.0:98): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:52.744   627   627 W vm_bms  : type=1400 audit(0.0:99): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:52.744   627   627 W vm_bms  : type=1400 audit(0.0:100): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=6245 scontext=u:r:vm_bms:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+04-01 17:42:52.747   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:52.749   627   627 I chatty  : uid=0(root) /vendor/bin/vm_bms identical 24 lines
+04-01 17:42:52.749   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:52.749   627   627 I VM_BMS  : power_supply_update: ocv_uv=4310515 ibatt=63818 soc=99 seq_num=2
+04-01 17:42:52.750   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:52.750   627   627 E libc    : Access denied finding property "vbms.log.enable"
+04-01 17:42:53.709   642  1034 W ServiceManager: Service package_native didn't start. Returning NULL
+04-01 17:42:57.572   607   607 I FocusManager: << focus() called >>
+04-01 17:42:57.572   607   607 I FocusManager:    trying to set focus on, tag: DIV, id: notification-view, class: 
+04-01 17:42:57.662   607   607 I FocusManager:    current focused element, tag: browser, id: , class: 
+04-01 17:42:57.662   607   607 I FocusManager: <- blur on, tag: browser, id: , class: 
+04-01 17:42:57.663  1601  1601 I FocusManager: <- blur on, tag: DIV, id: main-view, class: is-focus
+04-01 17:42:57.665   607   607 I FocusManager: -> focus is now on, tag: DIV, id: notification-view, class: 
+04-01 17:42:57.704  1601  1601 I Gecko   : [Event] event type: keydown, key: SoftLeft, target: [object HTMLDivElement], id: main-view
+04-01 17:42:57.913   607   607 I FocusManager: << focus() called >>
+04-01 17:42:57.913   607   607 I FocusManager:    trying to set focus on, tag: browser, id: systemapp, class: 
+04-01 17:42:57.913   607   607 I FocusManager: Warning: element is already focused.
+04-01 17:42:58.016   608  1053 E telemetry: error recv from sock Sys(EAGAIN)
+04-01 17:42:58.532   607   607 I FocusManager: << focus() called >>
+04-01 17:42:58.532   607   607 I FocusManager:    trying to set focus on, tag: browser, id: , class: 
+04-01 17:42:58.533   607   607 I FocusManager:    current focused element, tag: DIV, id: notification-view, class: 
+04-01 17:42:58.534   607   607 I FocusManager: <- blur on, tag: DIV, id: notification-view, class: 
+04-01 17:42:58.535   607   607 I FocusManager: -> focus is now on, tag: browser, id: , class: 
+04-01 17:42:58.537  1601  1601 I FocusManager: * WindowRaised *
+04-01 17:42:58.537  1601  1601 I FocusManager: -> focus is now on, tag: DIV, id: main-view, class: 
+04-01 17:42:58.544  1601  1601 I Gecko   : console.warn: "L10nError: \"icon=all-apps\" not found in en-US in http://launcher.localhost/index.html"
+04-01 17:42:58.545  1601  1601 W Web Content: Content JS WARN: 
+04-01 17:43:28.736   608  1053 E telemetry: error recv from sock Sys(EAGAIN)
