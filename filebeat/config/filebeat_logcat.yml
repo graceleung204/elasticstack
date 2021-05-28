@@ -1,0 +1,14 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /usr/share/filebeat/mylog/logcat/*.txt
+  exclude_lines: '\D'
+
+
+output.logstash:
+  hosts: ["logstash:5045"]
+
+processors:
+  - add_docker_metadata:
+      host: "unix:///host_docker/docker.sock"
