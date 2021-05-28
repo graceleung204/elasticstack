@@ -1,4 +1,0 @@
-- pipeline.id: test_log_pipeline
-  path.config: "/usr/share/logstash/pipeline/logstash_test_log.conf"
-- pipeline.id: logcat_pipeline
-  path.config: "/usr/share/logstash/pipeline/logstash_logcat.conf"
