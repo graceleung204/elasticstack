@@ -7,15 +7,14 @@ metricbeat.config:
 metricbeat.modules:
 - module: elasticsearch
   metricsets:
-    - node
-    - node_stats
-    #- index
-    #- index_recovery
-    #- index_summary
-    #- shard
-    #- ml_job
+    - cpu
+    - load
+    - memory
+    - uptime
   period: 10s
   hosts: ["elasticsearch:9200"]
+  cpu.metrics:  ["percentages","normalized_percentages"]
+  core.metrics: ["percentages"]
 
 #processors:
 #  - add_docker_metadata:
