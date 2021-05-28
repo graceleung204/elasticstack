@@ -12,9 +12,8 @@ services:
         hard: -1
     ports:
       - 9200:9200
-      - 9300:9300
     volumes:
-      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - ./elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     stdin_open: true
     tty: true
     network_mode: bridge
@@ -50,10 +49,12 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - ./logstash/pipeline/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - ./logstash/pipeline/:/usr/share/logstash/pipeline/
+      - ./logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
     ports:
       - 5044:5044
+      - 5045:5045
     links:
       - elasticsearch:elasticsearch
     depends_on:
@@ -77,7 +78,8 @@ services:
       - /var/run/docker.sock:/host_docker/docker.sock
       - /var/lib/docker:/host_docker/var/lib/docker
       - ./mylog:/usr/share/filebeat/mylog
-      - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml
+      - ./filebeat/config/filebeat_logcat.yml:/usr/share/filebeat/filebeat_logcat.yml
+      - ./filebeat/config/filebeat_test_log.yml:/usr/share/filebeat/filebeat_test_log.yml
     command: ["--strict.perms=false"]
     ulimits:
       memlock:
